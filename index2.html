@@ -5,17 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The 3PL Expert &rsaquo; Independent 3PL Advisor for CPG Brands</title>
 <meta name="description" content="Choosing the wrong 3PL can cost millions. Independent 3PL advisor for CPG brands. 25+ years, patents in 4 countries, zero kickbacks. Max Ferrigni.">
-<meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//kit.fontawesome.com' />
 <link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all' />
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap' type='text/css' media='all' />
-<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
-<link rel='stylesheet' href='css/swiper.css' type='text/css' media='all' />
-<link rel='stylesheet' href='css/animate.min.css' type='text/css' media='all' />
 <link rel='stylesheet' href='https://kit.fontawesome.com/e6ac3a76c5.css' type='text/css' media='all' />
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -30,345 +23,153 @@
   gtag('js', new Date());
   gtag('config', 'AW-18058921113');
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 <style>
-.logo-area img, .logo-area svg {height: 30px}
-.socials a i {font-size: 28px;color: #6699ff !important}
-.sticker {border: 1px solid #6699ff;display: inline-block;border-radius: 30px;padding: 6px 15px}
-p.subhead {font-size: 1.75rem;}
-.text-primary {color: #6699ff !important}
-.faq-home-5-wrapper {background:transparent !important}
-.progress-wrap svg {background: transparent;}
-.fear-list {list-style:none;padding-left:0;margin-top:20px;}
-.fear-list li {padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.1);font-size:1.15rem;color:#fff;}
-.fear-list li:last-child {border-bottom:none;}
-.fear-list li strong {color:#6699ff;margin-right:10px;font-weight:600;}
-.hero-fear-headline {font-size:46px;line-height:.95;color:#fff;font-weight:700;display:block;margin-bottom:20px;}
-.help-tile {height:100%;padding:35px 25px;border:1px solid rgba(255,255,255,0.1);border-radius:8px;transition:all 0.3s;background:rgba(255,255,255,0.02);}
-.help-tile:hover {border-color:#6699ff;background:rgba(102,153,255,0.05);transform:translateY(-4px);}
-.help-tile .icon img {max-width:70px;}
+body {background:#0a0a0a;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;margin:0;line-height:1.5;}
+a {color:#6699ff;text-decoration:none;}
+
+/* Menu Bar */
+.menu-bar {background:#0a0a0a;padding:15px 0;border-bottom:1px solid rgba(255,255,255,0.1);position:sticky;top:0;z-index:100;}
+.mb-inner {display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 20px;}
+.mb-left {display:flex;align-items:center;gap:18px;}
+.mb-logo img {height:32px;}
+.mb-face {width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid #6699ff;}
+.mb-tag {color:#aaa;font-size:0.85rem;line-height:1.3;display:none;}
+@media (min-width:992px){.mb-tag {display:block;}}
+.mb-tag strong {color:#fff;}
+.mb-cta {background:#6699ff;color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;}
+.mb-cta:hover {background:#4d80e6;color:#fff;}
+
+/* Hero */
+.hero {max-width:1200px;margin:0 auto;padding:80px 20px 60px;}
+.hero-grid {display:grid;grid-template-columns:1fr;gap:50px;align-items:center;}
+@media (min-width:900px){.hero-grid {grid-template-columns:1fr 1fr;gap:60px;}}
+.hero h1 {font-size:42px;line-height:1.05;font-weight:700;margin:0 0 18px;color:#fff;}
+@media (min-width:900px){.hero h1 {font-size:52px;}}
+.hero .sub {font-size:1.5rem;color:#fff;font-weight:600;margin-bottom:24px;}
+.hero .name {font-size:2.5rem;font-weight:700;margin-bottom:18px;}
+.hero .name strong {color:#6699ff;}
+.hero .bio {color:#bbb;font-size:1.05rem;line-height:1.6;margin-bottom:30px;}
+.hero .stat {display:inline-flex;align-items:baseline;gap:10px;}
+.hero .stat .num {font-size:3rem;font-weight:800;color:#fff;line-height:1;}
+.hero .stat .label {color:#6699ff;font-size:0.95rem;font-weight:600;}
+.hero-photo {display:flex;justify-content:center;}
+.hero-photo img {max-width:100%;width:380px;border-radius:12px;}
+
+/* How I Help */
+.help-section {max-width:1200px;margin:0 auto;padding:60px 20px;}
+.help-section h2 {text-align:center;color:#6699ff;font-size:2rem;margin-bottom:12px;}
+.help-section p.intro {text-align:center;color:#aaa;max-width:700px;margin:0 auto 50px;font-size:1.1rem;}
+.help-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px;}
+.help-tile {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:30px 24px;text-align:center;text-decoration:none;color:#fff;transition:all 0.2s;display:flex;flex-direction:column;}
+.help-tile:hover {border-color:#6699ff;background:rgba(102,153,255,0.06);transform:translateY(-3px);color:#fff;}
+.help-tile h3 {font-size:1.15rem;font-weight:700;margin:0 0 10px;}
+.help-tile p {color:#aaa;font-size:0.9rem;line-height:1.5;margin:0;flex:1;}
+.help-tile .arrow {color:#6699ff;font-weight:600;margin-top:14px;font-size:0.85rem;}
+
+/* Resource Links */
+.resource-section {max-width:900px;margin:0 auto;padding:40px 20px 60px;text-align:center;}
+.resource-section h3 {color:#aaa;font-size:1rem;font-weight:500;margin-bottom:20px;text-transform:uppercase;letter-spacing:0.1em;}
+.resource-links {display:flex;flex-wrap:wrap;justify-content:center;gap:24px;}
+.resource-links a {color:#6699ff;font-size:0.95rem;font-weight:500;}
+.resource-links a:hover {text-decoration:underline;}
+.resource-links span.coming {color:#666;font-size:0.95rem;}
+
+/* CTA */
+.cta {max-width:800px;margin:0 auto;padding:60px 20px 80px;text-align:center;}
+.cta h2 {font-size:2rem;margin-bottom:16px;}
+.cta p {color:#aaa;margin-bottom:30px;font-size:1.1rem;}
+.cta a.btn {background:#6699ff;color:#fff;padding:16px 40px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1.1rem;display:inline-block;}
+.cta a.btn:hover {background:#4d80e6;}
+
+/* Footer */
+.footer {padding:30px 20px;text-align:center;color:#666;font-size:0.85rem;border-top:1px solid rgba(255,255,255,0.05);}
 </style>
 </head>
-<body class="home-mazin dark-version">
-<!-- Header -->
-<div class="rts-header-five header--sticky">
-  <div class="container-three">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="header-five-wrapper">
-          <div class="logo-area"> <a href="#home" class="thumbnail"> <img class="logo-for-white" src="Images/logo-inverse.svg" alt="3PL Expert"> <img class="logo-for-dark" src="Images/logo-inverse.svg" alt="3PL Expert"> </a> </div>
-          <div class="menu-area">
-            <ul class="nav" id="nav">
-              <li class="current"> <a href="#home">Home</a> </li>
-              <li> <a href="#how">How I Help</a> </li>
-              <li> <a href="#risks">The Risks</a> </li>
-              <li> <a href="#services">Why Independent</a> </li>
-              <li> <a href="#contact">Contact</a> </li>
-            </ul>
-          </div>
-          <div class="social-area-five">
-            <div class="socials-text">Follow <i class="far fa-arrow-right ps-3"></i> </div>
-            <div class="socials">
-              <ul>
-                <li> <a href="https://www.linkedin.com/in/maxferrigni/" target="_blank"><i class="fab fa-linkedin"></i></a> </li>
-              </ul>
-            </div>
-          </div>
-          <div class="contact-menu-area-five">
-            <div class="sign-in-area"> <a href="mailto:max@3pl-expert.com" class="icon"> <i class="fal fa-envelope"></i> </a> <a href="mailto:max@3pl-expert.com" class="sign-ion-text"> <span>Email</span>
-              <p>max@3pl-expert.com</p>
-              </a> </div>
-            <div class="menu-area" id="menu-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2H15C15.5523 2 16 1.55228 16 1C16 0.447715 15.5523 0 15 0H1ZM1 6C0.447715 6 0 6.44772 0 7C0 7.55228 0.447715 6 1 6Z" fill="white" />
-                <path class="two" d="M11 13H1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
+<body>
+
+<!-- MENU BAR -->
+<div class="menu-bar">
+  <div class="mb-inner">
+    <div class="mb-left">
+      <a href="/" class="mb-logo"><img src="Images/logo-inverse.svg" alt="3PL Expert"></a>
+      <img src="Images/bio-pic.webp" alt="Max Ferrigni" class="mb-face">
+      <div class="mb-tag"><strong>Max Ferrigni</strong><br/>Independent 3PL Counsel &middot; 25+ Years</div>
     </div>
+    <a href="mailto:max+home@3pl-expert.com?subject=3PL%20Consultation%20Request" class="mb-cta">Email Max</a>
   </div>
 </div>
-<!-- Flyout Menu -->
-<div id="side-bar" class="side-bar mazin-home">
-  <button class="close-icon-menu">
-  <svg xmlns="http://www.w3.org/2000/svg" width="37" height="40" viewBox="0 0 37 40" fill="none">
-    <path d="M1.34412 39.4243L35.9024 0.918108" stroke="white" />
-    <path d="M35.9023 39.4243L1.3441 0.918108" stroke="white" />
-  </svg>
-  </button>
-  <div class="rts-sidebar-menu-desktop">
-    <div class="inner-wrapper">
-      <div class="body-mobile">
-        <nav class="nav-main mainmenu-nav mt--30">
-          <ul class="mainmenu" id="mobile-menu-active">
-            <li> <a href="#home">Home</a> </li>
-            <li> <a href="#how">How I Help</a> </li>
-            <li> <a href="#risks">The Risks</a> </li>
-            <li> <a href="#services">Why Independent</a> </li>
-            <li> <a href="#contact">Contact</a> </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="contact-info-area-wrapper">
-        <div class="single">
-          <h6> Email: </h6>
-          <a href="mailto:max@3pl-expert.com">max@3pl-expert.com</a> </div>
-        <div class="single">
-          <h6> FOLLOW ME: </h6>
-          <div class="social-wrapper-two">
-            <ul class="social-area">
-              <li><a href="https://www.linkedin.com/in/maxferrigni/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-grid">
+    <div>
+      <h1>Choosing the wrong 3PL can cost you millions.</h1>
+      <div class="sub">Don&rsquo;t Make A Mistake You Can&rsquo;t Undo</div>
+      <div class="name"><strong>Max</strong> Ferrigni</div>
+      <p class="bio">Independent 3PL advisor for CPG brands. I don&rsquo;t work for any 3PL, so my only job is making sure yours works for you &mdash; before you sign, while you&rsquo;re running, and when it&rsquo;s time to leave.</p>
+      <div class="stat"><span class="num">25+</span><span class="label">Years&rsquo; Experience<br/>Patents in 4 Countries</span></div>
+    </div>
+    <div class="hero-photo">
+      <img src="Images/bio-pic.webp" alt="Max Ferrigni">
     </div>
   </div>
 </div>
 
-<!-- Hero -->
-<div class="rts-banner-five-area-start pt--140 pt_sm--100 pb--50" id="home">
-  <div class="shape-top"> <img src="Images/13.png" alt="banner-image"> </div>
-  <div class="container-two">
-    <div class="row align-items-center">
-      <div class="col-xl-5 col-lg-5">
-        <div class="banner-five-left">
-          <div class="mb-5"><span class="hero-fear-headline">Choosing the wrong 3PL can cost you millions.</span></div>
-          <span class="sub-five">Don&#8217;t Make A Mistake You Can&#8217;t Undo</span>
-          <h1 class="title"><strong>Max</strong> Ferrigni</h1>
-          <p class="disc">Independent 3PL advisor for CPG brands. I don&#8217;t work for any 3PL, so my only job is making sure yours works for you &mdash; before you sign, while you&#8217;re running, and when it&#8217;s time to leave.</p>
-        </div>
-      </div>
-      <div class="col-xl-7 col-lg-7">
-        <div class="banner-mazin-right-area">
-          <div class="thumbnail stuff"> <img src="Images/bio-pic.webp" alt="personal-image" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shape-bottom"> <img src="Images/11.png" alt="banner-image"> </div>
-  <div class="text-bottom">
-    <h2> <span class="number">25</span> </h2>
-    <div class="text">
-      <p class="desc">Years&#8217; Experience</p>
-      <p class="percent">+</p>
-    </div>
-  </div>
-  <a href="#how" class="go-bottom-icon"> <img src="Images/12.png" alt="go-bottom"> </a>
-  <div class="chat-option"> <a href="#contact" class="live-chat-option"> <img src="Images/chat.png" alt="chat">
-    <p class="detsil"> <span class="time">Free 30-Minute</span> <span class="support">Consultation Call</span> </p>
-    </a> </div>
-</div>
+<!-- HOW I HELP -->
+<div class="help-section">
+  <h2>How I Help</h2>
+  <p class="intro">Four common situations. Pick the one that sounds like you.</p>
+  <div class="help-grid">
 
-<!-- HOW I HELP - Moved up so visitors immediately self-select -->
-<div id="how" style="padding-top:100px;padding-bottom:60px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center mb-5">
-        <h3 class="text-primary">How I Help</h3>
-        <p class="subhead" style="max-width:800px;margin:0 auto;">Four common situations. One independent advisor. Pick the one that sounds like you.</p>
-      </div>
-      <div class="col-md-6 col-lg-3 mb-4">
-        <a href="/selection2.html" style="text-decoration:none;color:inherit;display:block;height:100%;">
-          <div class="help-tile text-center">
-            <div class="icon mb-3"><img src="Images/01.png" alt="Find The Right 3PL"></div>
-            <h5 class="title">Find The Right 3PL</h5>
-            <p class="disc">Independent selection help &mdash; not the 3PL with the best sales pitch.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-3 mb-4">
-        <a href="/problems2.html" style="text-decoration:none;color:inherit;display:block;height:100%;">
-          <div class="help-tile text-center">
-            <div class="icon mb-3"><img src="Images/02.png" alt="Fix 3PL Problems"></div>
-            <h5 class="title">Fix 3PL Problems</h5>
-            <p class="disc">Diagnose what&#8217;s broken. Decide whether to fix it or leave.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-3 mb-4">
-        <a href="/negotiation2.html" style="text-decoration:none;color:inherit;display:block;height:100%;">
-          <div class="help-tile text-center">
-            <div class="icon mb-3"><img src="Images/03.png" alt="Negotiate Your Contract"></div>
-            <h5 class="title">Negotiate Your Contract</h5>
-            <p class="disc">Every 3PL contract has room. Most brands never push.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-3 mb-4">
-        <a href="/onboarding2.html" style="text-decoration:none;color:inherit;display:block;height:100%;">
-          <div class="help-tile text-center">
-            <div class="icon mb-3"><img src="Images/04.png" alt="Onboard a New 3PL"></div>
-            <h5 class="title">Onboard a New 3PL</h5>
-            <p class="disc">First 90 days make or break the relationship.</p>
-          </div>
-        </a>
-      </div>
-    </div>
+    <a href="/selection2.html" class="help-tile">
+      <h3>Find The Right 3PL</h3>
+      <p>Independent selection help &mdash; not the 3PL with the best sales pitch.</p>
+      <div class="arrow">Learn more &rsaquo;</div>
+    </a>
+
+    <a href="/problems2.html" class="help-tile">
+      <h3>Fix 3PL Problems</h3>
+      <p>Diagnose what&rsquo;s broken. Decide whether to fix it or leave.</p>
+      <div class="arrow">Learn more &rsaquo;</div>
+    </a>
+
+    <a href="/negotiation2.html" class="help-tile">
+      <h3>Negotiate Your Contract</h3>
+      <p>Every 3PL contract has room. Most brands never push.</p>
+      <div class="arrow">Learn more &rsaquo;</div>
+    </a>
+
+    <a href="/onboarding2.html" class="help-tile">
+      <h3>Onboard a New 3PL</h3>
+      <p>The first 90 days make or break the relationship.</p>
+      <div class="arrow">Learn more &rsaquo;</div>
+    </a>
+
   </div>
 </div>
 
-<!-- THE RISKS -->
-<div class="rts-about-five mt-control-about" id="risks" style="padding-top:60px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="wrapper-about-five">
-          <div class="row">
-            <div class="col-xl-6 col-lg-12">
-              <div class="title-area">
-                <h3 class="text-primary">What Goes Wrong</h3>
-              </div>
-              <div class="content-area-mizar mr--5">
-                <p class="subhead">Most 3PL disasters aren&#8217;t dramatic. They&#8217;re slow bleeds &mdash; thousands of small failures that drain margin, frustrate customers, and show up as chargebacks, stockouts, and angry emails from your biggest accounts.</p>
-              </div>
-              <ul class="fear-list mt-4">
-                <li><strong>&rsaquo;</strong> Inventory accuracy drops below 95% &mdash; retail chargebacks pile up</li>
-                <li><strong>&rsaquo;</strong> &ldquo;All-inclusive&rdquo; pricing hides 20+ accessorial fees</li>
-                <li><strong>&rsaquo;</strong> Sales team overpromised; ops team can&#8217;t deliver</li>
-                <li><strong>&rsaquo;</strong> Missed ship-by dates on Amazon, Target, Whole Foods</li>
-                <li><strong>&rsaquo;</strong> WMS integration that was supposed to take 30 days takes 9 months</li>
-                <li><strong>&rsaquo;</strong> Contract auto-renews with a 12-month termination window</li>
-                <li><strong>&rsaquo;</strong> Rate increases with no benchmark to push back on</li>
-              </ul>
-            </div>
-            <div class="col-xl-6 col-lg-12 pl--20 pl_sm--10">
-              <div class="single-award">
-                <div class="left">
-                  <h6 class="title">You Only Find Out After It&#8217;s Too Late</h6>
-                  <p class="disc">The problems above don&#8217;t show up in the sales process. They show up three months in, when switching costs six figures and six months to unwind.</p>
-                </div>
-              </div>
-              <div class="single-award">
-                <div class="left">
-                  <h6 class="title">The Sales Pitch Isn&#8217;t The Service</h6>
-                  <p class="disc">Every 3PL has a polished pitch deck. Very few can back it up for a fast-growing CPG brand with real retail complexity.</p>
-                </div>
-              </div>
-              <div class="single-award">
-                <div class="left">
-                  <h6 class="title">Your Team Is Already Stretched</h6>
-                  <p class="disc">Your ops lead doesn&#8217;t have time to run a proper RFP, benchmark rates, or read a 40-page contract for landmines. You need someone who does this for a living.</p>
-                </div>
-              </div>
-              <div class="single-award">
-                <div class="left">
-                  <h6 class="title">You Don&#8217;t Need A Full-Time Hire</h6>
-                  <p class="disc">A VP of Supply Chain costs $300K+ fully loaded. You can&#8217;t do this alone &mdash; but you also don&#8217;t need to make a permanent hire to fix it.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- RESOURCE LINKS - text links to other pages -->
+<div class="resource-section">
+  <h3>Other Resources</h3>
+  <div class="resource-links">
+    <a href="/selection2.html">3PLs Worth Considering</a>
+    <span class="coming">Thinking of Leaving? (coming soon)</span>
+    <span class="coming">Thinking of Suing? (coming soon)</span>
+    <span class="coming">Best WMS Systems (coming soon)</span>
   </div>
 </div>
 
-<!-- Why Independent -->
-<div class="rts-about-five mt-control-about" id="services">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="wrapper-about-five">
-          <div class="row">
-            <div class="col-xl-6 col-lg-12">
-              <div class="title-area">
-                <h3 class="text-primary">Why Independent Matters</h3>
-              </div>
-              <div class="content-area-mizar mr--5">
-                <p class="subhead">Most &ldquo;3PL consultants&rdquo; take referral fees from the 3PLs they recommend. That&#8217;s not advice &mdash; that&#8217;s a commission.</p>
-              </div>
-              <div class="mt-5">
-                  <img src="Images/warehouse.webp" alt="Warehouse" class="img-fluid rounded-4">
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 pl--20 pl_sm--10">
-              <div class="single-award">
-                <div class="left">
-                  <h6 class="title">No Referral Fees, No Kickbacks</h6>
-                  <p class="disc">I don&#8217;t take commissions from 3PLs. You pay me; I work for you. That&#8217;s the whole model.</p>
-                </div>
-              </div>
-              <div class="single-award">
-                <div class="left">
-                  <h6 class="title">Patents In 4 Countries</h6>
-                  <p class="disc">Co-named on warehouse design patents filed across 4 countries. Engineering depth, not just consulting frameworks.</p>
-                </div>
-              </div>
-              <div class="single-award">
-                <div class="left">
-                  <h6 class="title">Michigan + Michigan State MBA</h6>
-                  <p class="disc">B.S.E. from University of Michigan, MBA from Michigan State, Executive Education in Logistics. The training behind the experience.</p>
-                </div>
-              </div>
-              <div class="single-award">
-                <div class="left">
-                  <h6 class="title">Hands-On WMS &amp; Systems Experience</h6>
-                  <p class="disc">AutoCAD, Manhattan, NetSuite, ShipHero, SAP, Oracle EBS, and more. I&#8217;ve implemented these systems &mdash; not just read about them.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- CTA -->
+<div class="cta">
+  <h2>Before You Make A Decision You&rsquo;ll Regret</h2>
+  <p>A free 30-minute call to hear what&rsquo;s going on. No pitch. No obligation.</p>
+  <a href="mailto:max+home@3pl-expert.com?subject=3PL%20Consultation%20Request" class="btn">Email Max</a>
 </div>
 
-<!-- Contact -->
-<div class="rts-faq-section rts-section-gap2Bottom mt-5" id="contact">
-  <div class="container-two">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="faq-home-5-wrapper">
-          <div class="title-faq text-center">
-            <h3 class="title">Before You Make A Decision You&#8217;ll Regret</h3>
-            <p class="sub-title">A free 30-minute call to hear what&#8217;s going on.<br/>
-No pitch. No obligation. Just a real conversation about your situation.</p>
-            <a href="mailto:max+home@3pl-expert.com?subject=3PL%20Consultation%20Request" class="rts-btn btn-main-2 mr--20">Email Max</a>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- FOOTER -->
+<div class="footer">
+  Copyright Max Ferrigni &copy; 2026. All rights reserved.
 </div>
 
-<!-- Copyright -->
-<div class="rts-copyright-mazin ptb--35">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <p class="disc text-center"> <span>Copyright Max Ferrigni &copy; 2026</span>. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="progress-wrap">
-  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-  </svg>
-</div>
-
-<script type="text/javascript" src="js/vendor/jquery.nav.js"></script>
-<script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/vendor/waw.js"></script>
-<script type="text/javascript" src="js/vendor/waypoint.js"></script>
-<script type="text/javascript" src="js/plugins/splittext.js"></script>
-<script type="text/javascript" src="js/plugins/gsap.min.js"></script>
-<script type="text/javascript" src="js/plugins/scrolltigger.js"></script>
-<script type="text/javascript" src="js/plugins/smoothscrool.js"></script>
-<script type="text/javascript" src="js/plugins/swiper.js"></script>
-<script type="text/javascript" src="js/plugins/counterup.js"></script>
-<script type="text/javascript" src="js/plugins/isotope.js"></script>
-<script type="text/javascript" src="js/plugins/magnific-popup.js"></script>
-<script type="text/javascript" src="js/plugins/contact-form.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
