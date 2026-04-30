@@ -92,10 +92,12 @@ a {color:#6699ff;text-decoration:none;}
 
 /* Education */
 .edu-grid {display:grid;grid-template-columns:1fr;gap:16px;}
-@media (min-width:700px){.edu-grid {grid-template-columns:1fr 1fr 1fr;}}
-.edu-card {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:24px 20px;text-align:center;}
-.edu-card .school {font-size:1rem;font-weight:700;color:#fff;margin-bottom:6px;}
-.edu-card .degree {font-size:0.85rem;color:#aaa;line-height:1.4;}
+@media (min-width:700px){.edu-grid {grid-template-columns:1fr 1fr;max-width:700px;margin:0 auto;}}
+.edu-card {background:#fff;border-radius:8px;padding:28px 20px;text-align:center;}
+.edu-card .logo-wrap {height:120px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.edu-card .logo-wrap img {width:120px;height:120px;object-fit:contain;}
+.edu-card .school {font-size:1rem;font-weight:700;color:#1a1a1a;margin-bottom:6px;}
+.edu-card .degree {font-size:0.85rem;color:#555;line-height:1.6;}
 
 /* CTA */
 .cta {max-width:800px;margin:0 auto;padding:60px 20px 90px;text-align:center;border-top:1px solid rgba(255,255,255,0.07);}
@@ -290,16 +292,14 @@ a {color:#6699ff;text-decoration:none;}
   <p class="intro">Built on a foundation of engineering, business, and hands-on logistics practice.</p>
   <div class="edu-grid">
     <div class="edu-card">
+      <div class="logo-wrap"><img src="Images/Michigan_sq.png" alt="University of Michigan"></div>
       <div class="school">University of Michigan</div>
-      <div class="degree">B.S.E. — Engineering<br/>Ann Arbor, MI</div>
+      <div class="degree">B.S.E. — Engineering</div>
     </div>
     <div class="edu-card">
+      <div class="logo-wrap"><img src="Images/MSU_sq.png" alt="Michigan State University"></div>
       <div class="school">Michigan State University</div>
-      <div class="degree">MBA<br/>East Lansing, MI</div>
-    </div>
-    <div class="edu-card">
-      <div class="school">Michigan State University</div>
-      <div class="degree">Executive Education<br/>Logistics &amp; Supply Chain</div>
+      <div class="degree">MBA<br/>Executive Education — Logistics &amp; Supply Chain</div>
     </div>
   </div>
 </div>
