@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fix 3PL Problems &rsaquo; Let&rsquo;s Be Honest About What&rsquo;s Really Going On</title>
+<meta name="description" content="Your 3PL problems are probably your fault. Not entirely. But mostly. 30 years in distribution means I've seen this pattern hundreds of times. Let's fix it.">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap' type='text/css' media='all' />
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w5ev0ybchs");
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18058921113"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18058921113');
+</script>
+<style>
+*, *::before, *::after {box-sizing:border-box;}
+body {background:#0a0a0a;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;margin:0;line-height:1.6;}
+a {color:#6699ff;text-decoration:none;}
+
+/* Menu Bar */
+.menu-bar {background:#0a0a0a;padding:15px 0;border-bottom:1px solid rgba(255,255,255,0.1);position:sticky;top:0;z-index:100;}
+.mb-inner {display:flex;align-items:center;justify-content:space-between;width:92%;max-width:1600px;margin:0 auto;gap:20px;}
+.mb-left {display:flex;align-items:center;gap:14px;flex-shrink:0;}
+.mb-logo img {height:32px;}
+.mb-face {width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #6699ff;}
+.mb-cta {background:#6699ff;color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;white-space:nowrap;flex-shrink:0;}
+.mb-cta:hover {background:#4d80e6;color:#fff;}
+
+/* Nav links */
+.mb-nav {display:none;align-items:center;gap:22px;}
+@media (min-width:800px){.mb-nav {display:flex;}}
+.mb-nav a {color:#aaa;font-size:0.85rem;font-weight:500;white-space:nowrap;transition:color 0.2s;}
+.mb-nav a:hover {color:#fff;}
+.mb-nav a.active {color:#fff;}
+
+/* Hero */
+.hero {width:92%;max-width:1600px;margin:0 auto;padding:80px 0 50px;text-align:center;}
+.hero .label {font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#6699ff;margin-bottom:18px;}
+.hero h1 {font-size:44px;line-height:1.05;font-weight:700;margin:0 0 20px;}
+@media (min-width:900px){.hero h1 {font-size:56px;}}
+.hero h1 .accent {color:#6699ff;}
+.hero .sub {font-size:1.15rem;color:#aaa;max-width:680px;margin:0 auto;line-height:1.6;}
+
+/* Real Talk Block */
+.real-talk {width:92%;max-width:1600px;margin:60px auto 0;}
+.rt-header {display:flex;align-items:center;gap:16px;margin-bottom:30px;}
+.rt-badge {background:#6699ff;color:#fff;font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:6px 14px;border-radius:4px;white-space:nowrap;}
+.rt-line {flex:1;height:1px;background:rgba(255,255,255,0.1);}
+.rt-body {font-size:1.1rem;color:#ccc;line-height:1.8;max-width:900px;}
+.rt-body p {margin:0 0 20px;}
+.rt-body p:last-child {margin:0;}
+.rt-callout {font-size:1.3rem;font-weight:700;color:#fff;line-height:1.4;border-left:3px solid #6699ff;padding-left:20px;margin:30px 0;}
+
+/* Fault Section */
+.fault-section {width:92%;max-width:1600px;margin:70px auto 0;}
+.fault-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 30px;color:#fff;}
+.fault-section h2 .accent {color:#6699ff;}
+.fault-grid {display:grid;grid-template-columns:1fr;gap:16px;}
+@media (min-width:700px){.fault-grid {grid-template-columns:1fr 1fr;}}
+@media (min-width:1100px){.fault-grid {grid-template-columns:1fr 1fr 1fr;}}
+.fault-card {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:24px;}
+.fault-card .num {font-size:2rem;font-weight:800;color:rgba(102,153,255,0.3);line-height:1;margin-bottom:10px;}
+.fault-card h3 {font-size:1rem;font-weight:700;color:#fff;margin:0 0 8px;}
+.fault-card p {font-size:0.9rem;color:#aaa;line-height:1.6;margin:0;}
+
+/* Amber callout */
+.money-block {width:92%;max-width:1600px;margin:70px auto 0;}
+.money-inner {background:rgba(245,166,35,0.05);border-left:4px solid #f5a623;border-radius:0 8px 8px 0;padding:36px 32px;}
+.money-inner h2 {color:#f5a623;font-size:1.5rem;margin:0 0 14px;}
+.money-inner p {color:#ddd;font-size:1.05rem;line-height:1.75;margin:0 0 16px;max-width:900px;}
+.money-inner p:last-child {margin:0;}
+.money-inner strong {color:#fff;}
+
+/* What I Do */
+.what-section {width:92%;max-width:1600px;margin:70px auto 0;}
+.what-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 14px;}
+.what-section h2 .accent {color:#6699ff;}
+.what-section .intro {color:#bbb;font-size:1.05rem;line-height:1.7;margin-bottom:30px;max-width:900px;}
+.what-list {list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:12px;}
+@media (min-width:700px){.what-list {grid-template-columns:1fr 1fr;}}
+@media (min-width:1100px){.what-list {grid-template-columns:1fr 1fr 1fr 1fr;}}
+.what-list li {display:flex;align-items:flex-start;gap:12px;font-size:0.95rem;color:#bbb;line-height:1.5;}
+.what-list li::before {content:"→";color:#6699ff;font-weight:700;flex-shrink:0;}
+
+/* CTA */
+.cta {width:92%;max-width:900px;margin:80px auto 0;padding:60px 0 90px;text-align:center;border-top:1px solid rgba(255,255,255,0.07);}
+.cta h2 {font-size:1.9rem;margin-bottom:14px;}
+.cta p {color:#aaa;margin-bottom:28px;font-size:1.05rem;}
+.cta a.btn {background:#6699ff;color:#fff;padding:16px 40px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1.05rem;display:inline-block;}
+.cta a.btn:hover {background:#4d80e6;}
+
+/* Footer */
+.footer {padding:30px 4%;text-align:center;color:#666;font-size:0.85rem;border-top:1px solid rgba(255,255,255,0.05);}
+</style>
+</head>
+<body>
+
+<!-- MENU BAR -->
+<div class="menu-bar">
+  <div class="mb-inner">
+    <div class="mb-left">
+      <a href="/" class="mb-logo"><img src="Images/logo-inverse.svg" alt="3PL Expert"></a>
+      <img src="Images/bio-pic.webp" alt="Max Ferrigni" class="mb-face">
+    </div>
+    <nav class="mb-nav">
+      <a href="/selection2.html">Find a 3PL</a>
+      <a href="/problems2.html" class="active">Fix Problems</a>
+      <a href="/negotiation2.html">Negotiate</a>
+      <a href="/onboarding2.html">Onboard</a>
+      <a href="/leaving2.html">Leaving</a>
+      <a href="/suing2.html">Fighting</a>
+      <a href="/wms2.html">Software</a>
+      <a href="/about2.html">About</a>
+    </nav>
+    <a href="mailto:max+problems@3pl-expert.com?subject=3PL%20Problems%20Help" class="mb-cta">Email Max</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="label">Let&rsquo;s Be Honest</div>
+  <h1>Your 3PL Problems?<br/>They&rsquo;re Probably<br/><span class="accent">Your Fault.</span></h1>
+  <p class="sub">That&rsquo;s not an insult. It&rsquo;s the most useful thing anyone in this industry will tell you &mdash; and it&rsquo;s the starting point for actually fixing things.</p>
+</div>
+
+<!-- REAL TALK -->
+<div class="real-talk">
+  <div class="rt-header">
+    <span class="rt-badge">Real Talk</span>
+    <div class="rt-line"></div>
+  </div>
+  <div class="rt-body">
+    <p>Without knowing anything about your brand, your history, or your 3PL &mdash; I am 99% confident that your distribution problems are primarily of your own making.</p>
+    <div class="rt-callout">"The 3PL is just the last one holding the bag."</div>
+    <p>Here&rsquo;s the thing about distribution: picking, packing, receiving, inventory control &mdash; the fundamentals haven&rsquo;t changed much in decades. The warehouse management systems are the same. The order management systems are the same. Parcel and freight shipping methods are the same. The people working in these facilities move from warehouse to warehouse, change job titles, and the 3PLs themselves get bought and sold constantly &mdash; but the nuts and bolts of distribution are largely unchanged.</p>
+    <p>So if the industry is stable, why is your operation a mess? Keep reading.</p>
+  </div>
+</div>
+
+<!-- YOUR FAULT -->
+<div class="fault-section">
+  <h2>The Ways Brands <span class="accent">Create Their Own Problems</span></h2>
+  <div class="fault-grid">
+
+    <div class="fault-card">
+      <div class="num">01</div>
+      <h3>Unrealistic cost and service targets</h3>
+      <p>You&rsquo;ve set cost targets that are impossible to hit without cutting corners, or service targets that would challenge a company ten times your size. Your 3PL is failing because you&rsquo;ve defined failure as the only possible outcome.</p>
+    </div>
+
+    <div class="fault-card">
+      <div class="num">02</div>
+      <h3>Constant changes with no customer benefit</h3>
+      <p>You&rsquo;ve made so many internal changes &mdash; product numbers, packaging, receiving methods, SKU structures &mdash; that have no benefit to your end customer but make it nearly impossible for your 3PL to operate consistently.</p>
+    </div>
+
+    <div class="fault-card">
+      <div class="num">03</div>
+      <h3>Allowing last-minute order changes</h3>
+      <p>You let customers change orders at the last second. You accommodate the impossible because you&rsquo;re afraid to say no. Every exception you allow teaches your customers that exceptions are normal &mdash; and destroys your 3PL&rsquo;s ability to plan.</p>
+    </div>
+
+    <div class="fault-card">
+      <div class="num">04</div>
+      <h3>Not empowering your 3PL to decide</h3>
+      <p>You&rsquo;ve created a culture where your 3PL can&rsquo;t make a single decision without your approval. You&rsquo;ve micromanaged them into paralysis, then blamed them for being slow.</p>
+    </div>
+
+    <div class="fault-card">
+      <div class="num">05</div>
+      <h3>Competing with Godzilla</h3>
+      <p>Your customers get next-day delivery from Amazon. You&rsquo;re trying to match that with a $5M brand and a regional 3PL. That&rsquo;s not a logistics problem &mdash; it&rsquo;s a strategy problem. And it filters down into every unrealistic expectation you set.</p>
+    </div>
+
+    <div class="fault-card">
+      <div class="num">06</div>
+      <h3>Poor communication of changes</h3>
+      <p>New products, new packaging, new retail requirements, new carriers &mdash; introduced without warning, without lead time, without documentation. Your 3PL is always reacting, never prepared. That&rsquo;s on you.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- MONEY BLOCK -->
+<div class="money-block">
+  <div class="money-inner">
+    <h2>&#9888; The Most Important Thing Nobody Tells You: Your 3PL Has to Make Money.</h2>
+    <p>
+      It sounds counterintuitive, but you absolutely need your 3PL to be cash flow positive. Not driving Porsches &mdash; but paying their rent, paying their people, and operating at a profit.
+    </p>
+    <p>
+      A 3PL under financial stress cuts corners. They lose good staff. They defer maintenance. They take on too many clients to cover a bad lease. <strong>When your 3PL is struggling financially, your freight is the last thing they&rsquo;re focused on.</strong>
+    </p>
+    <p>
+      The goal isn&rsquo;t to squeeze every last cent out of your 3PL contract. The goal is to find the equilibrium &mdash; where you&rsquo;re paying a fair price for a stable, well-run operation that you can depend on. That&rsquo;s what actually protects your business.
+    </p>
+  </div>
+</div>
+
+<!-- WHAT I DO -->
+<div class="what-section">
+  <h2>What I <span class="accent">Actually Do</span> When You Call Me</h2>
+  <p class="intro">I come in without a side. I&rsquo;ve spent 30 years on both sides of this relationship. I know what a well-run brand looks like to a 3PL, and I know what a well-run 3PL looks like to a brand. That perspective is what makes this work.</p>
+  <ul class="what-list">
+    <li>Diagnose whether the problem is the 3PL, the brand, or both</li>
+    <li>Benchmark your costs against current market rates</li>
+    <li>Review your SLA and identify where expectations are unrealistic</li>
+    <li>Assess your 3PL&rsquo;s financial stability and operational health</li>
+    <li>Find the savings opportunities that exist on both sides</li>
+    <li>Build a remediation plan with clear owners and timelines</li>
+    <li>Facilitate the hard conversations so you don&rsquo;t have to</li>
+    <li>Tell you honestly if it&rsquo;s time to leave &mdash; and what that would take</li>
+  </ul>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <h2>Ready for an Honest Conversation?</h2>
+  <p>A free 30-minute call. Tell me what&rsquo;s going on. I&rsquo;ll tell you what I think is actually happening &mdash; and whether I can help.</p>
+  <a href="mailto:max+problems@3pl-expert.com?subject=3PL%20Problems%20Help" class="btn">Email Max</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  Copyright Max Ferrigni &copy; 2026. All rights reserved.
+</div>
+
+</body>
+</html>
