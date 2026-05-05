@@ -70,7 +70,7 @@ a {color:#6699ff;text-decoration:none;}
 .step-card h3 {font-size:1.05rem;font-weight:700;color:#fff;margin:0 0 10px;line-height:1.3;}
 .step-card p {font-size:0.9rem;color:#aaa;line-height:1.6;margin:0;}
 
-/* Amber — pricing warning */
+/* Amber warning */
 .warning-block {width:92%;max-width:1600px;margin:70px auto 0;}
 .warning-inner {background:rgba(245,166,35,0.05);border-left:4px solid #f5a623;border-radius:0 8px 8px 0;padding:36px 32px;}
 .warning-inner h2 {color:#f5a623;font-size:1.5rem;margin:0 0 14px;}
@@ -112,26 +112,9 @@ a {color:#6699ff;text-decoration:none;}
 </head>
 <body>
 
-<!-- MENU BAR -->
-<div class="menu-bar">
-  <div class="mb-inner">
-    <div class="mb-left">
-      <a href="/index2.html" class="mb-logo"><img src="Images/logo-inverse.svg" alt="3PL Expert"></a>
-      <img src="Images/bio-pic.webp" alt="Max Ferrigni" class="mb-face">
-    </div>
-    <nav class="mb-nav">
-      <a href="/selection2.html">Find a 3PL</a>
-      <a href="/problems2.html">Fix Problems</a>
-      <a href="/negotiation2.html" class="active">Negotiate</a>
-      <a href="/onboarding2.html">Onboard</a>
-      <a href="/leaving2.html">Leaving</a>
-      <a href="/suing2.html">Fighting</a>
-      <a href="/wms2.html">Software</a>
-      <a href="/about2.html">About</a>
-    </nav>
-    <a href="mailto:max+negotiation@3pl-expert.com?subject=3PL%20Contract%20Negotiation" class="mb-cta">Email Max</a>
-  </div>
-</div>
+<!-- SHARED NAV — edit /nav.html to update navigation across all pages -->
+<div id="main-nav"></div>
+<script src="/nav-loader.js"></script>
 
 <!-- HERO -->
 <div class="hero">
@@ -147,9 +130,9 @@ a {color:#6699ff;text-decoration:none;}
     <div class="rt-line"></div>
   </div>
   <div class="rt-body">
-    <p>Before you can negotiate anything, you have to know your business cold. Not roughly. Not "we ship a lot of small stuff." Cold. Item numbers, UPCs, outer case codes, product dimensions, weights, supplier lead times, order profiles, seasonal spikes — all of it.</p>
-    <div class="rt-callout">"The 3PL knows the moment you walk in whether you know your business or not."</div>
-    <p>I've watched brand after brand sit across the table from a 3PL, nodding along, saying they've got it all figured out — and then the moment operations start, it becomes clear they don't know their own SKUs, their data is a mess, and their suppliers send inconsistent product. The 3PL will fix it. That's what they do. But they won't fix it for free, and they won't always fix it right.</p>
+    <p>Before you can negotiate anything, you have to know your business cold. Not roughly. Not &ldquo;we ship a lot of small stuff.&rdquo; Cold. Item numbers, UPCs, outer case codes, product dimensions, weights, supplier lead times, order profiles, seasonal spikes &mdash; all of it.</p>
+    <div class="rt-callout">&ldquo;The 3PL knows the moment you walk in whether you know your business or not.&rdquo;</div>
+    <p>I&rsquo;ve watched brand after brand sit across the table from a 3PL, nodding along, saying they&rsquo;ve got it all figured out &mdash; and then the moment operations start, it becomes clear they don&rsquo;t know their own SKUs, their data is a mess, and their suppliers send inconsistent product. The 3PL will fix it. That&rsquo;s what they do. But they won&rsquo;t fix it for free, and they won&rsquo;t always fix it right.</p>
     <p>The negotiation starts before you ever talk price. It starts with how prepared you are.</p>
   </div>
 </div>
@@ -157,45 +140,38 @@ a {color:#6699ff;text-decoration:none;}
 <!-- STEPS -->
 <div class="steps-section">
   <h2>What to Get <span class="accent">Right</span> Before You Negotiate</h2>
-  <p class="intro">These aren't negotiation tactics. They're the prerequisites. Without them, you're negotiating blind.</p>
+  <p class="intro">These aren&rsquo;t negotiation tactics. They&rsquo;re the prerequisites. Without them, you&rsquo;re negotiating blind.</p>
   <div class="steps-grid">
-
     <div class="step-card">
       <div class="num">01</div>
-      <h3>Know your item data — completely</h3>
-      <p>Every SKU needs a clean item number, accurate dimensions, weight, UPC, and outer case code. Duplicate item numbers, missing UPCs, and bad dimensions will cost you money from day one — and give the 3PL cover to charge you for the cleanup.</p>
+      <h3>Know your item data &mdash; completely</h3>
+      <p>Every SKU needs a clean item number, accurate dimensions, weight, UPC, and outer case code. Duplicate item numbers, missing UPCs, and bad dimensions will cost you money from day one &mdash; and give the 3PL cover to charge you for the cleanup.</p>
     </div>
-
     <div class="step-card">
       <div class="num">02</div>
       <h3>Know your order profile</h3>
-      <p>How many orders per day? Average units per order? Peak vs. off-peak ratios? What percentage ship parcel vs. freight? The 3PL uses this to price. If you don't know it, you can't verify whether their model makes sense for you.</p>
+      <p>How many orders per day? Average units per order? Peak vs. off-peak ratios? What percentage ship parcel vs. freight? The 3PL uses this to price. If you don&rsquo;t know it, you can&rsquo;t verify whether their model makes sense for you.</p>
     </div>
-
     <div class="step-card">
       <div class="num">03</div>
       <h3>Understand how they price</h3>
-      <p>Percent of revenue. Per unit picked. Per hour. Per pallet stored. Most 3PLs use a blend. The slower they are to explain their pricing model, the more concerned I become — it suggests they don't have a clear story for how they create value.</p>
+      <p>Percent of revenue. Per unit picked. Per hour. Per pallet stored. Most 3PLs use a blend. The slower they are to explain their pricing model, the more concerned I become &mdash; it suggests they don&rsquo;t have a clear story for how they create value.</p>
     </div>
-
     <div class="step-card">
       <div class="num">04</div>
       <h3>Know your supplier reliability</h3>
-      <p>Bad inbound product — wrong quantities, poor labeling, damaged cases — creates downstream costs that end up on your bill. Know your supplier quality before you negotiate, because you'll need to account for it in the contract.</p>
+      <p>Bad inbound product &mdash; wrong quantities, poor labeling, damaged cases &mdash; creates downstream costs that end up on your bill. Know your supplier quality before you negotiate, because you&rsquo;ll need to account for it in the contract.</p>
     </div>
-
     <div class="step-card">
       <div class="num">05</div>
       <h3>Define your service requirements precisely</h3>
-      <p>Same-day cutoff times, carrier routing guides, EDI requirements, returns handling, kitting — spell it all out. Vague requirements become expensive interpretations once you're live.</p>
+      <p>Same-day cutoff times, carrier routing guides, EDI requirements, returns handling, kitting &mdash; spell it all out. Vague requirements become expensive interpretations once you&rsquo;re live.</p>
     </div>
-
     <div class="step-card">
       <div class="num">06</div>
       <h3>Know what good looks like</h3>
-      <p>What accuracy rate is acceptable? What's a reasonable pick cost for your volume? What does a fair storage rate look like in your region? Without benchmarks, you can't evaluate what you're being offered.</p>
+      <p>What accuracy rate is acceptable? What&rsquo;s a reasonable pick cost for your volume? What does a fair storage rate look like in your region? Without benchmarks, you can&rsquo;t evaluate what you&rsquo;re being offered.</p>
     </div>
-
   </div>
 </div>
 
@@ -203,15 +179,9 @@ a {color:#6699ff;text-decoration:none;}
 <div class="warning-block">
   <div class="warning-inner">
     <h2>&#9888; The Rate Sheet Means Nothing. The Bill Is What Matters.</h2>
-    <p>
-      This is the thing brands learn too late. You can negotiate an incredibly low pick rate — and then get billed for receiving fees, special handling charges, account management time, label reprints, address corrections, and a dozen other line items that weren't on the rate sheet.
-    </p>
-    <p>
-      <strong>The goal isn't the lowest rate. The goal is the lowest total cost as a percentage of your sales.</strong> That number — your true distribution cost as a percent of revenue out of that building — is the only metric that matters. Everything else is noise.
-    </p>
-    <p>
-      The problem is you can't know that number until you're running. Which is exactly why you need someone in your corner who has seen enough contracts and enough bills to know what the real number is likely to be — and how to structure guardrails so it doesn't spiral.
-    </p>
+    <p>This is the thing brands learn too late. You can negotiate an incredibly low pick rate &mdash; and then get billed for receiving fees, special handling charges, account management time, label reprints, address corrections, and a dozen other line items that weren&rsquo;t on the rate sheet.</p>
+    <p><strong>The goal isn&rsquo;t the lowest rate. The goal is the lowest total cost as a percentage of your sales.</strong> That number &mdash; your true distribution cost as a percent of revenue out of that building &mdash; is the only metric that matters. Everything else is noise.</p>
+    <p>The problem is you can&rsquo;t know that number until you&rsquo;re running. Which is exactly why you need someone in your corner who has seen enough contracts and enough bills to know what the real number is likely to be &mdash; and how to structure guardrails so it doesn&rsquo;t spiral.</p>
   </div>
 </div>
 
@@ -219,19 +189,19 @@ a {color:#6699ff;text-decoration:none;}
 <div class="metric-section">
   <h2>The <span class="accent">One Number</span> That Actually Matters</h2>
   <div class="metric-body">
-    <p>Strip away everything else. There's one metric that tells you whether your 3PL relationship is working financially:</p>
+    <p>Strip away everything else. There&rsquo;s one metric that tells you whether your 3PL relationship is working financially:</p>
     <div class="metric-highlight">
-      Distribution Cost <span>÷</span> Net Revenue from that facility <span>=</span> Your True 3PL Cost %
+      Distribution Cost <span>&divide;</span> Net Revenue from that facility <span>=</span> Your True 3PL Cost %
     </div>
-    <p>Keep shipping revenue and shipping costs together — they should net to zero. What remains is your pure distribution cost. Get that number as low as possible without squeezing your 3PL into unprofitability, and you've won the negotiation.</p>
-    <p>A 3PL that isn't making money will cut corners, lose staff, and eventually create a crisis for your business. The right deal isn't the cheapest deal — it's the one where both sides are generating value and have an incentive to make it work.</p>
+    <p>Keep shipping revenue and shipping costs together &mdash; they should net to zero. What remains is your pure distribution cost. Get that number as low as possible without squeezing your 3PL into unprofitability, and you&rsquo;ve won the negotiation.</p>
+    <p>A 3PL that isn&rsquo;t making money will cut corners, lose staff, and eventually create a crisis for your business. The right deal isn&rsquo;t the cheapest deal &mdash; it&rsquo;s the one where both sides are generating value and have an incentive to make it work.</p>
   </div>
 </div>
 
 <!-- WHAT I BRING -->
 <div class="bring-section">
   <h2>What I <span class="accent">Bring</span> to the Table</h2>
-  <p class="intro">I've been on both sides of these negotiations. I know what 3PLs are willing to move on, what they'll never budge on, and where the real value is buried in the contract language.</p>
+  <p class="intro">I&rsquo;ve been on both sides of these negotiations. I know what 3PLs are willing to move on, what they&rsquo;ll never budge on, and where the real value is buried in the contract language.</p>
   <ul class="bring-list">
     <li>Benchmarked rate analysis against current market</li>
     <li>Line-by-line contract review and redline</li>
