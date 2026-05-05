@@ -1,0 +1,51 @@
+/* =====================
+   SHARED NAV & FOOTER
+   ===================== */
+
+/* Sticky nav wrapper */
+#main-nav {position:sticky;top:0;z-index:100;}
+
+/* Menu Bar */
+.menu-bar {background:#0a0a0a;border-bottom:1px solid rgba(255,255,255,0.1);}
+.mb-inner {display:flex;align-items:center;justify-content:space-between;width:92%;max-width:1600px;margin:0 auto;padding:10px 0;gap:16px;}
+.mb-left {display:flex;align-items:center;gap:12px;flex-shrink:0;}
+.mb-logo img {height:32px;display:block;}
+.mb-face {width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #6699ff;flex-shrink:0;}
+
+/* Nav links with icons */
+.mb-nav {display:none;align-items:center;gap:6px;flex:1;justify-content:center;}
+@media (min-width:800px){.mb-nav {display:flex;}}
+.mb-nav a {display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 10px;border-radius:6px;text-decoration:none;transition:background 0.2s;}
+.mb-nav a:hover {background:rgba(102,153,255,0.08);}
+.mb-nav a.active {background:rgba(102,153,255,0.12);}
+.mb-nav a img {width:36px;height:36px;object-fit:contain;}
+.mb-nav a span {font-size:0.7rem;font-weight:600;color:#aaa;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;}
+.mb-nav a:hover span, .mb-nav a.active span {color:#fff;}
+
+/* Email CTA */
+.mb-cta {background:#6699ff;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.9rem;white-space:nowrap;flex-shrink:0;}
+.mb-cta:hover {background:#4d80e6;color:#fff;}
+
+/* =====================
+   FOOTER
+   ===================== */
+.site-footer {background:#111;border-top:1px solid rgba(255,255,255,0.07);padding:60px 0 0;}
+.footer-inner {width:92%;max-width:1600px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:50px;}
+@media (min-width:800px){.footer-inner {grid-template-columns:260px 1fr;}}
+.footer-logo {height:28px;margin-bottom:14px;display:block;}
+.footer-tagline {color:#666;font-size:0.85rem;line-height:1.6;margin:0 0 20px;}
+.footer-contact {display:flex;flex-direction:column;gap:10px;}
+.footer-linkedin {display:inline-flex;align-items:center;gap:8px;color:#6699ff;font-size:0.85rem;font-weight:600;text-decoration:none;}
+.footer-linkedin:hover {color:#fff;}
+.footer-email {color:#888;font-size:0.85rem;text-decoration:none;}
+.footer-email:hover {color:#6699ff;}
+.footer-nav {display:grid;grid-template-columns:repeat(2,1fr);gap:30px;}
+@media (min-width:700px){.footer-nav {grid-template-columns:repeat(4,1fr);}}
+.footer-col {display:flex;flex-direction:column;gap:10px;}
+.footer-col-title {font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#6699ff;margin-bottom:6px;}
+.footer-col a {color:#888;font-size:0.875rem;text-decoration:none;transition:color 0.2s;line-height:1.4;}
+.footer-col a:hover {color:#fff;}
+.footer-col span.soon {color:#444;font-size:0.875rem;}
+.footer-bottom {width:92%;max-width:1600px;margin:0 auto;padding:20px 0;border-top:1px solid rgba(255,255,255,0.05);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;}
+.footer-bottom span {color:#444;font-size:0.78rem;}
+.footer-disclaimer {font-style:italic;}
