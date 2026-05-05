@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Find The Right 3PL &rsaquo; An Independent Guide</title>
-<meta name="description" content="Independent guide to leading 3PLs for CPG brands. No kickbacks, no paid placements.">
+<title>Fixing 3PL Problems &rsaquo; Let&rsquo;s Be Honest About What&rsquo;s Really Going On</title>
+<meta name="description" content="Your 3PL problems are probably your fault. Not entirely. But mostly. 30 years in distribution means I've seen this pattern hundreds of times. Let's fix it.">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap' type='text/css' media='all' />
 <link rel='stylesheet' href='/css/shared.css' type='text/css' media='all' />
 <script type="text/javascript">
@@ -27,38 +27,63 @@ body {background:#0a0a0a;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;m
 a {color:#6699ff;text-decoration:none;}
 
 
-.mb-nav {display:none;align-items:center;gap:22px;}
-@media (min-width:800px){.mb-nav {display:flex;}}
-.mb-nav a {color:#aaa;font-size:0.85rem;font-weight:500;white-space:nowrap;transition:color 0.2s;}
-.mb-nav a:hover {color:#fff;}
-.mb-nav a.active {color:#fff;}
+
+
 
 /* Hero */
-.hero {width:92%;max-width:1600px;margin:0 auto;padding:80px 0 40px;text-align:center;}
-.hero h1 {font-size:48px;line-height:1.1;font-weight:700;margin-bottom:20px;}
-.hero p.sub {font-size:1.25rem;color:#aaa;max-width:700px;margin:0 auto;line-height:1.5;}
+.hero {width:92%;max-width:1600px;margin:0 auto;padding:80px 0 50px;text-align:center;}
+.hero .label {font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#6699ff;margin-bottom:18px;}
+.hero h1 {font-size:44px;line-height:1.05;font-weight:700;margin:0 0 20px;}
+@media (min-width:900px){.hero h1 {font-size:56px;}}
+.hero h1 .accent {color:#6699ff;}
+.hero .sub {font-size:1.15rem;color:#aaa;max-width:680px;margin:0 auto;line-height:1.6;}
 
-/* 3PL Grid */
-.logo-section {width:92%;max-width:1600px;margin:0 auto;padding:60px 0;}
-.logo-section h2 {text-align:center;font-size:32px;margin-bottom:15px;color:#6699ff;}
-.logo-section p.intro {text-align:center;color:#aaa;max-width:700px;margin:0 auto 50px;font-size:1rem;line-height:1.5;}
-.logo-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;}
-.logo-card {background:#fff;border-radius:8px;padding:30px 24px;display:flex;flex-direction:column;transition:all 0.2s;text-decoration:none;color:#1a1a1a;}
-.logo-card:hover {transform:translateY(-4px);box-shadow:0 8px 24px rgba(102,153,255,0.15);color:#1a1a1a;}
-.logo-card .logo-wrap {height:80px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
-.logo-card .logo-wrap img {max-height:60px;max-width:200px;object-fit:contain;}
-.logo-card .name {font-weight:700;font-size:1.15rem;margin-bottom:8px;color:#1a1a1a;}
-.logo-card .desc {font-size:0.9rem;color:#555;line-height:1.5;margin-bottom:14px;flex:1;}
-.logo-card .visit {font-size:0.85rem;color:#6699ff;font-weight:600;}
+/* Real Talk Block */
+.real-talk {width:92%;max-width:1600px;margin:60px auto 0;}
+.rt-header {display:flex;align-items:center;gap:16px;margin-bottom:30px;}
+.rt-badge {background:#6699ff;color:#fff;font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:6px 14px;border-radius:4px;white-space:nowrap;}
+.rt-line {flex:1;height:1px;background:rgba(255,255,255,0.1);}
+.rt-body {font-size:1.1rem;color:#ccc;line-height:1.8;max-width:900px;}
+.rt-body p {margin:0 0 20px;}
+.rt-body p:last-child {margin:0;}
+.rt-callout {font-size:1.3rem;font-weight:700;color:#fff;line-height:1.4;border-left:3px solid #6699ff;padding-left:20px;margin:30px 0;}
 
-/* Disclaimer */
-.disclaimer {width:92%;max-width:1200px;margin:0 auto;padding:40px 0;color:#888;font-size:0.85rem;line-height:1.6;text-align:center;border-top:1px solid rgba(255,255,255,0.05);}
+/* Fault Section */
+.fault-section {width:92%;max-width:1600px;margin:70px auto 0;}
+.fault-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 30px;color:#fff;}
+.fault-section h2 .accent {color:#6699ff;}
+.fault-grid {display:grid;grid-template-columns:1fr;gap:16px;}
+@media (min-width:700px){.fault-grid {grid-template-columns:1fr 1fr;}}
+@media (min-width:1100px){.fault-grid {grid-template-columns:1fr 1fr 1fr;}}
+.fault-card {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:24px;}
+.fault-card .num {font-size:2rem;font-weight:800;color:rgba(102,153,255,0.3);line-height:1;margin-bottom:10px;}
+.fault-card h3 {font-size:1rem;font-weight:700;color:#fff;margin:0 0 8px;}
+.fault-card p {font-size:0.9rem;color:#aaa;line-height:1.6;margin:0;}
+
+/* Amber callout */
+.money-block {width:92%;max-width:1600px;margin:70px auto 0;}
+.money-inner {background:rgba(245,166,35,0.05);border-left:4px solid #f5a623;border-radius:0 8px 8px 0;padding:36px 32px;}
+.money-inner h2 {color:#f5a623;font-size:1.5rem;margin:0 0 14px;}
+.money-inner p {color:#ddd;font-size:1.05rem;line-height:1.75;margin:0 0 16px;max-width:900px;}
+.money-inner p:last-child {margin:0;}
+.money-inner strong {color:#fff;}
+
+/* What I Do */
+.what-section {width:92%;max-width:1600px;margin:70px auto 0;}
+.what-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 14px;}
+.what-section h2 .accent {color:#6699ff;}
+.what-section .intro {color:#bbb;font-size:1.05rem;line-height:1.7;margin-bottom:30px;max-width:900px;}
+.what-list {list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:12px;}
+@media (min-width:700px){.what-list {grid-template-columns:1fr 1fr;}}
+@media (min-width:1100px){.what-list {grid-template-columns:1fr 1fr 1fr 1fr;}}
+.what-list li {display:flex;align-items:flex-start;gap:12px;font-size:0.95rem;color:#bbb;line-height:1.5;}
+.what-list li::before {content:"→";color:#6699ff;font-weight:700;flex-shrink:0;}
 
 /* CTA */
-.cta {width:92%;max-width:900px;margin:0 auto;padding:60px 0 90px;text-align:center;}
-.cta h2 {font-size:32px;margin-bottom:20px;}
-.cta p {color:#aaa;margin-bottom:30px;font-size:1.1rem;}
-.cta a.btn {background:#6699ff;color:#fff;padding:16px 40px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1.1rem;display:inline-block;}
+.cta {width:92%;max-width:900px;margin:80px auto 0;padding:60px 0 90px;text-align:center;border-top:1px solid rgba(255,255,255,0.07);}
+.cta h2 {font-size:1.9rem;margin-bottom:14px;}
+.cta p {color:#aaa;margin-bottom:28px;font-size:1.05rem;}
+.cta a.btn {background:#6699ff;color:#fff;padding:16px 40px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1.05rem;display:inline-block;}
 .cta a.btn:hover {background:#4d80e6;}
 
 
@@ -70,115 +95,43 @@ a {color:#6699ff;text-decoration:none;}
 <div id="main-nav"></div>
 <script src="/js/nav-loader.js"></script>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>Find The Right 3PL.</h1>
-  <p class="sub">An independent guide to leading 3PLs for CPG brands. No kickbacks. No paid placements.</p>
-</div>
-
-<!-- 3PL GRID -->
-<div class="logo-section">
-  <h2>3PLs Worth Considering</h2>
-  <p class="intro">Listed alphabetically. Each note reflects my professional observation from 30 years inside the industry. None of these companies have paid for inclusion.</p>
-  <div class="logo-grid">
-
-    <a href="https://www.amsfulfillment.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/ams.png" alt="AMS Fulfillment"></div>
-      <div class="name">AMS Fulfillment</div>
-      <div class="desc">Bi-coastal 3PL with 1M+ sq ft across CA, PA, and DE. B Corp certified. Strong fit for mid-to-large CPG, beauty, and apparel brands.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://www.capacityllc.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/capacity.png" alt="Capacity LLC"></div>
-      <div class="name">Capacity LLC</div>
-      <div class="desc">25+ years in beauty, wellness, and lifestyle fulfillment. Facilities in NJ, IN, CA, and UK. Best for high-volume DTC brands shipping 5,000+ orders/month.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://cart.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/cart.png" alt="Cart.com"></div>
-      <div class="name">Cart.com</div>
-      <div class="desc">Nationwide 3PL network with proprietary OMS/WMS software. Tech-forward, well-funded. Strong fit for brands wanting integrated commerce + fulfillment.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://gxo.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/GXO.png" alt="GXO"></div>
-      <div class="name">GXO</div>
-      <div class="desc">World&rsquo;s largest pure-play contract logistics provider (NYSE: GXO). 1,000+ facilities, 200M+ sq ft globally. Built for Fortune 500 / enterprise scale.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://www.hermanntds.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/Hermann.png" alt="Hermann TDS"></div>
-      <div class="name">Hermann TDS</div>
-      <div class="desc">Family-owned, asset-based since 1927. 2M+ sq ft across NJ, DE, and TX. Food-grade and hazmat certified. Strong fit for food, beverage, and industrial CPG.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://landmarkglobal.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/landmark.png" alt="Landmark Global"></div>
-      <div class="name">Landmark Global</div>
-      <div class="desc">Owned by bnode (Belgian post group). Cross-border parcel and international shipping specialist. Best for brands expanding internationally.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://lmwarehousing.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/LM_Warehousing.jpeg" alt="L&M Distribution"></div>
-      <div class="name">L&amp;M Distribution</div>
-      <div class="desc">Specialty 3PL for wine, spirits, beverage, and food. ~425K sq ft across PA, SC, and CA. NSF and FDA certified. Niche but excellent in their lane.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://www.maersk.com/supply-chain-logistics/warehousing-and-distribution" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/Maersk.png" alt="Maersk"></div>
-      <div class="name">Maersk</div>
-      <div class="desc">Global shipping and contract logistics giant. 549+ warehouses worldwide. Best for enterprise brands needing integrated ocean freight + warehousing.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://www.radial.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/Radial-Paxon-rgb.jpg" alt="Radial / Paxon"></div>
-      <div class="name">Radial / Paxon</div>
-      <div class="desc">North America&rsquo;s largest pure-play 3PL fulfillment provider, 30+ centers. Owned by bnode, rebranding to Paxon in 2026. Mid-to-large enterprise eCommerce.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://www.shipbob.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/shipbob.png" alt="ShipBob"></div>
-      <div class="name">ShipBob</div>
-      <div class="desc">Tech-forward 3PL with 50-60+ fulfillment centers. Best for SMB DTC brands shipping lightweight goods at volume.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://www.system-beauty.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/system_beauty.png" alt="System Beauty"></div>
-      <div class="name">System Beauty</div>
-      <div class="desc">Boutique 3PL exclusively focused on beauty, cosmetics, and personal care. ~312K sq ft in Fort Worth, TX plus Salt Lake City. White-glove service.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
-    <a href="https://tondofulfillment.com/" target="_blank" rel="noopener" class="logo-card">
-      <div class="logo-wrap"><img src="Images/3pl/tondo.png" alt="Tondo Fulfillment"></div>
-      <div class="name">Tondo Fulfillment</div>
-      <div class="desc">200K sq ft across Delaware and Salt Lake City UT. Strong fit for SMB DTC brands shipping small/light items, subscription boxes, and supplements.</div>
-      <div class="visit">Visit site &rsaquo;</div>
-    </a>
-
+<!-- MONEY BLOCK -->
+<div class="money-block">
+  <div class="money-inner">
+    <h2>&#9888; The Most Important Thing Nobody Tells You: Your 3PL Has to Make Money.</h2>
+    <p>
+      It sounds counterintuitive, but you absolutely need your 3PL to be cash flow positive. Not driving Porsches &mdash; but paying their rent, paying their people, and operating at a profit.
+    </p>
+    <p>
+      A 3PL under financial stress cuts corners. They lose good staff. They defer maintenance. They take on too many clients to cover a bad lease. <strong>When your 3PL is struggling financially, your freight is the last thing they&rsquo;re focused on.</strong>
+    </p>
+    <p>
+      The goal isn&rsquo;t to squeeze every last cent out of your 3PL contract. The goal is to find the equilibrium &mdash; where you&rsquo;re paying a fair price for a stable, well-run operation that you can depend on. That&rsquo;s what actually protects your business.
+    </p>
   </div>
 </div>
 
-<!-- DISCLAIMER -->
-<div class="disclaimer">
-  Logos are property of their respective owners. None of these companies have paid for inclusion or endorsed this site. This list reflects 3PLs I have evaluated, worked alongside, or competed against in 30 years of industry experience. Descriptions are my professional observations and should not be considered endorsements.
+<!-- WHAT I DO -->
+<div class="what-section">
+  <h2>What I <span class="accent">Actually Do</span> When You Call Me</h2>
+  <p class="intro">I come in without a side. I&rsquo;ve spent 30 years on both sides of this relationship. I know what a well-run brand looks like to a 3PL, and I know what a well-run 3PL looks like to a brand. That perspective is what makes this work.</p>
+  <ul class="what-list">
+    <li>Diagnose whether the problem is the 3PL, the brand, or both</li>
+    <li>Benchmark your costs against current market rates</li>
+    <li>Review your SLA and identify where expectations are unrealistic</li>
+    <li>Assess your 3PL&rsquo;s financial stability and operational health</li>
+    <li>Find the savings opportunities that exist on both sides</li>
+    <li>Build a remediation plan with clear owners and timelines</li>
+    <li>Facilitate the hard conversations so you don&rsquo;t have to</li>
+    <li>Tell you honestly if it&rsquo;s time to leave &mdash; and what that would take</li>
+  </ul>
 </div>
 
 <!-- CTA -->
 <div class="cta">
-  <h2>Need help picking?</h2>
-  <p>A free 30-minute call. Tell me your situation. I&rsquo;ll tell you what I&rsquo;d watch for.</p>
-  <a href="mailto:max+selection@3pl-expert.com?subject=3PL%20Selection%20Help" class="btn">Email Max</a>
+  <h2>Ready for an Honest Conversation?</h2>
+  <p>A free 30-minute call. Tell me what&rsquo;s going on. I&rsquo;ll tell you what I think is actually happening &mdash; and whether I can help.</p>
+  <a href="mailto:max+fixing@3pl-expert.com?subject=3PL%20Problems%20Help" class="btn">Email Max</a>
 </div>
 
 <!-- SHARED FOOTER — edit /includes/footer.html to update -->
