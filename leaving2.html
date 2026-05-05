@@ -6,6 +6,7 @@
 <title>Leaving Your 3PL &rsaquo; Manage This Divorce Smartly</title>
 <meta name="description" content="Leaving a 3PL is a divorce. Done wrong, you'll go dark. Done right, your customers never notice. Independent help from Max Ferrigni.">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap' type='text/css' media='all' />
+<link rel='stylesheet' href='/css/shared.css' type='text/css' media='all' />
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -25,14 +26,7 @@
 body {background:#0a0a0a;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;margin:0;line-height:1.6;}
 a {color:#6699ff;text-decoration:none;}
 
-/* Menu Bar */
-.menu-bar {background:#0a0a0a;padding:15px 0;border-bottom:1px solid rgba(255,255,255,0.1);position:sticky;top:0;z-index:100;}
-.mb-inner {display:flex;align-items:center;justify-content:space-between;width:92%;max-width:1600px;margin:0 auto;gap:20px;}
-.mb-left {display:flex;align-items:center;gap:14px;flex-shrink:0;}
-.mb-logo img {height:32px;}
-.mb-face {width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #6699ff;}
-.mb-cta {background:#6699ff;color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;white-space:nowrap;flex-shrink:0;}
-.mb-cta:hover {background:#4d80e6;color:#fff;}
+
 .mb-nav {display:none;align-items:center;gap:22px;}
 @media (min-width:800px){.mb-nav {display:flex;}}
 .mb-nav a {color:#aaa;font-size:0.85rem;font-weight:500;white-space:nowrap;transition:color 0.2s;}
@@ -73,32 +67,14 @@ a {color:#6699ff;text-decoration:none;}
 .cta a.btn {background:#6699ff;color:#fff;padding:16px 40px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1.05rem;display:inline-block;}
 .cta a.btn:hover {background:#4d80e6;}
 
-/* Footer */
-.footer {padding:30px 4%;text-align:center;color:#666;font-size:0.85rem;border-top:1px solid rgba(255,255,255,0.05);}
+
 </style>
 </head>
 <body>
 
-<!-- MENU BAR -->
-<div class="menu-bar">
-  <div class="mb-inner">
-    <div class="mb-left">
-      <a href="/index2.html" class="mb-logo"><img src="Images/logo-inverse.svg" alt="3PL Expert"></a>
-      <img src="Images/bio-pic.webp" alt="Max Ferrigni" class="mb-face">
-    </div>
-    <nav class="mb-nav">
-      <a href="/selection2.html">Find a 3PL</a>
-      <a href="/problems2.html">Fix Problems</a>
-      <a href="/negotiation2.html">Negotiate</a>
-      <a href="/onboarding2.html">Onboard</a>
-      <a href="/leaving2.html" class="active">Leaving</a>
-      <a href="/fighting2.html">Fighting</a>
-      <a href="/wms2.html">Software</a>
-      <a href="/about2.html">About</a>
-    </nav>
-    <a href="mailto:max+leaving@3pl-expert.com?subject=3PL%20Transition%20Help" class="mb-cta">Email Max</a>
-  </div>
-</div>
+<!-- SHARED NAV — edit /includes/nav.html to update -->
+<div id="main-nav"></div>
+<script src="/js/nav-loader.js"></script>
 
 <!-- HERO -->
 <div class="hero">
@@ -145,10 +121,8 @@ a {color:#6699ff;text-decoration:none;}
   <a href="mailto:max+leaving@3pl-expert.com?subject=3PL%20Transition%20Help" class="btn">Email Max</a>
 </div>
 
-<!-- FOOTER -->
-<div class="footer">
-  Copyright Max Ferrigni &copy; 2026. All rights reserved.
-</div>
+<!-- SHARED FOOTER — edit /includes/footer.html to update -->
+<div id="main-footer"></div>
 
 </body>
 </html>
