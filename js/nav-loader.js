@@ -22,10 +22,16 @@
       var el = document.getElementById('main-nav');
       if (!el) return;
       el.innerHTML = html;
+
+      // Set active link based on current page
       var links = el.querySelectorAll('.mb-nav a');
       links.forEach(function(a) {
-        if (a.getAttribute('href') === '/' + page) a.classList.add('active');
+        if (a.getAttribute('href') === '/' + page) {
+          a.classList.add('active');
+        }
       });
+
+      // Set email button
       var email = emailMap[page] || 'max@3pl-expert.com';
       var btn = el.querySelector('#nav-email-btn');
       if (btn) btn.href = 'mailto:' + email + '?subject=3PL%20Consultation%20Request';
