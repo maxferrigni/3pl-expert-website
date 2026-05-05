@@ -26,13 +26,6 @@
 body {background:#0a0a0a;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;margin:0;line-height:1.6;}
 a {color:#6699ff;text-decoration:none;}
 
-
-.mb-nav {display:none;align-items:center;gap:22px;}
-@media (min-width:800px){.mb-nav {display:flex;}}
-.mb-nav a {color:#aaa;font-size:0.85rem;font-weight:500;white-space:nowrap;transition:color 0.2s;}
-.mb-nav a:hover {color:#fff;}
-.mb-nav a.active {color:#fff;}
-
 /* Hero */
 .hero {width:92%;max-width:1600px;margin:0 auto;padding:80px 0 50px;text-align:center;}
 .hero .label {font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#6699ff;margin-bottom:18px;}
@@ -41,14 +34,14 @@ a {color:#6699ff;text-decoration:none;}
 .hero h1 .accent {color:#6699ff;}
 .hero .sub {font-size:1.15rem;color:#aaa;max-width:700px;margin:0 auto;line-height:1.6;}
 
-/* Opening joke block */
+/* Opening block */
 .joke-block {width:92%;max-width:1600px;margin:60px auto 0;}
 .joke-inner {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:40px 36px;}
 .joke-inner p {font-size:1.15rem;color:#ccc;line-height:1.8;max-width:900px;margin:0 0 20px;}
 .joke-inner p:last-child {margin:0;}
 .joke-inner .punchline {font-size:1.4rem;font-weight:700;color:#fff;line-height:1.4;border-left:3px solid #6699ff;padding-left:20px;margin:24px 0;}
 
-/* Amber — never sue */
+/* Amber warning */
 .warning-block {width:92%;max-width:1600px;margin:60px auto 0;}
 .warning-inner {background:rgba(245,166,35,0.05);border-left:4px solid #f5a623;border-radius:0 8px 8px 0;padding:36px 32px;}
 .warning-inner h2 {color:#f5a623;font-size:1.5rem;margin:0 0 14px;}
@@ -56,7 +49,7 @@ a {color:#6699ff;text-decoration:none;}
 .warning-inner p:last-child {margin:0;}
 .warning-inner strong {color:#fff;}
 
-/* Better words section */
+/* Better words */
 .words-section {width:92%;max-width:1600px;margin:70px auto 0;}
 .words-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 14px;color:#fff;}
 .words-section h2 .accent {color:#6699ff;}
@@ -65,7 +58,7 @@ a {color:#6699ff;text-decoration:none;}
 .word-card {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:16px 20px;font-size:0.95rem;color:#fff;font-weight:600;}
 .word-card .sub {font-size:0.8rem;color:#aaa;font-weight:400;margin-top:4px;line-height:1.4;}
 
-/* Never leave section */
+/* Never leave */
 .never-section {width:92%;max-width:1600px;margin:70px auto 0;}
 .never-inner {background:rgba(102,153,255,0.05);border:1px solid rgba(102,153,255,0.2);border-radius:8px;padding:40px 36px;}
 .never-inner h2 {font-size:1.5rem;font-weight:700;color:#fff;margin:0 0 16px;}
@@ -73,7 +66,7 @@ a {color:#6699ff;text-decoration:none;}
 .never-inner p:last-child {margin:0;}
 .never-inner strong {color:#fff;}
 
-/* Misalignment section */
+/* Misalignment */
 .misalign-section {width:92%;max-width:1600px;margin:70px auto 0;}
 .misalign-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 14px;}
 .misalign-section h2 .accent {color:#6699ff;}
@@ -102,8 +95,6 @@ a {color:#6699ff;text-decoration:none;}
 .cta p {color:#aaa;margin-bottom:28px;font-size:1.05rem;}
 .cta a.btn {background:#6699ff;color:#fff;padding:16px 40px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1.05rem;display:inline-block;}
 .cta a.btn:hover {background:#4d80e6;}
-
-
 </style>
 </head>
 <body>
@@ -111,65 +102,99 @@ a {color:#6699ff;text-decoration:none;}
 <!-- SHARED NAV — edit /includes/nav.html to update -->
 <div id="main-nav"></div>
 <script src="/js/nav-loader.js"></script>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="label">Before You Do Something You&rsquo;ll Regret</div>
+  <h1>I Won&rsquo;t Give You<br/>Legal Advice.<br/><span class="accent">Here&rsquo;s My Legal Advice.</span></h1>
+  <p class="sub">Never sue your 3PL. It&rsquo;s one of the worst business decisions I&rsquo;ve ever seen &mdash; and I&rsquo;ve seen it a lot. Here&rsquo;s why, and what to do instead.</p>
 </div>
 
-<!-- NEVER LEAVE -->
+<!-- OPENING -->
+<div class="joke-block">
+  <div class="joke-inner">
+    <p>I know why you&rsquo;re here. You feel betrayed. You feel like your 3PL is stealing from you, destroying your brand, ruining your business. You&rsquo;ve heard the horror stories. Maybe you&rsquo;re living one.</p>
+    <div class="punchline">&ldquo;Even when the 3PL is terrible &mdash; and I&rsquo;ve worked with some truly terrible ones &mdash; suing them is still the wrong answer.&rdquo;</div>
+    <p>Here&rsquo;s the problem with the word &ldquo;terrible.&rdquo; It&rsquo;s one adjective. It&rsquo;s hyperbolic. It tries to summarize dozens of managers, hundreds of workers, millions of decisions, and years of operations with a single word. That&rsquo;s not analysis. That&rsquo;s frustration talking &mdash; and frustration makes terrible legal strategy.</p>
+  </div>
+</div>
+
+<!-- RULE 1 — NEVER SUE -->
+<div class="warning-block">
+  <div class="warning-inner">
+    <h2>&#9888; Rule #1: Never Sue Your 3PL.</h2>
+    <p>Litigation is expensive, slow, and distracting. While you&rsquo;re fighting in court, your business still needs to ship. Your customers don&rsquo;t care about your lawsuit. Your retail partners don&rsquo;t care. Your investors don&rsquo;t care. <strong>The only people who benefit from a 3PL lawsuit are the lawyers.</strong></p>
+    <p>Even if you win, you&rsquo;ve spent months or years of leadership attention, legal fees, and emotional energy on a fight that did nothing to grow your business. And you almost certainly still had to find a new 3PL in the middle of it.</p>
+    <p>There is almost always a better path. The goal is to get to that path before someone files anything.</p>
+  </div>
+</div>
+
+<!-- BETTER WORDS -->
+<div class="words-section">
+  <h2>Better Words Than <span class="accent">&ldquo;Terrible&rdquo;</span></h2>
+  <p class="intro">If you want to fix a problem, you have to describe it accurately. &ldquo;Terrible&rdquo; gets you nowhere. These words actually point to solutions.</p>
+  <div class="words-grid">
+    <div class="word-card">Disorganized<div class="sub">Fixable with process and accountability</div></div>
+    <div class="word-card">Understaffed<div class="sub">Addressable in contract or through volume adjustment</div></div>
+    <div class="word-card">Poor leadership<div class="sub">Escalatable to ownership or senior management</div></div>
+    <div class="word-card">High turnover<div class="sub">A symptom &mdash; usually of compensation or culture</div></div>
+    <div class="word-card">Misaligned pricing<div class="sub">Renegotiable &mdash; and often the actual root cause</div></div>
+    <div class="word-card">Outdated systems<div class="sub">A selection problem &mdash; not necessarily a failure</div></div>
+    <div class="word-card">Poor communication<div class="sub">Solvable with the right escalation structure</div></div>
+    <div class="word-card">Measuring the wrong things<div class="sub">The most common problem &mdash; and the most fixable</div></div>
+  </div>
+</div>
+
+<!-- RULE 2 — NEVER LEAVE -->
 <div class="never-section">
   <div class="never-inner">
     <h2>Rule #2: Never Leave Your 3PL If You Can Avoid It.</h2>
     <p>Your 3PL is not what makes or breaks your business. <strong>Sales make or break your business.</strong> A brand with strong sales can survive a mediocre 3PL. A brand with weak sales will struggle no matter how good their fulfillment is.</p>
-    <p>Leaving a 3PL is expensive, disruptive, and risky. It consumes leadership bandwidth, creates operational risk, and costs real money — in transition fees, duplicated overhead, and the inevitable downtime that comes from doing it wrong. If you can fix the relationship instead of ending it, that is almost always the better outcome.</p>
-    <p>My business is about helping brands be successful with their 3PL — not helping them find a new one. Moving is the last resort, not the first response.</p>
+    <p>Leaving a 3PL is expensive, disruptive, and risky. It consumes leadership bandwidth, creates operational risk, and costs real money &mdash; in transition fees, duplicated overhead, and the inevitable downtime that comes from doing it wrong. If you can fix the relationship instead of ending it, that is almost always the better outcome.</p>
+    <p>My business is about helping brands be successful with their 3PL &mdash; not helping them find a new one. Moving is the last resort, not the first response.</p>
   </div>
 </div>
 
 <!-- WHERE THINGS GO WRONG -->
 <div class="misalign-section">
   <h2>Where the <span class="accent">Real Problems</span> Usually Live</h2>
-  <p class="intro">Most 3PL disputes aren&rsquo;t about negligence or bad faith. They&rsquo;re about misalignment — between what&rsquo;s being done, what&rsquo;s being charged, and what&rsquo;s being measured.</p>
+  <p class="intro">Most 3PL disputes aren&rsquo;t about negligence or bad faith. They&rsquo;re about misalignment &mdash; between what&rsquo;s being done, what&rsquo;s being charged, and what&rsquo;s being measured.</p>
   <div class="misalign-grid">
-
     <div class="misalign-card">
       <h3>Value-added services billed hourly</h3>
-      <p>Kitting, gift wrapping, stickering, seasonal pack-out, special collateral — all billed at a catch-all hourly rate. The brand has no idea what they&rsquo;re getting per service. The 3PL has no incentive to be efficient. Nobody wins.</p>
+      <p>Kitting, gift wrapping, stickering, seasonal pack-out, special collateral &mdash; all billed at a catch-all hourly rate. The brand has no idea what they&rsquo;re getting per service. The 3PL has no incentive to be efficient. Nobody wins.</p>
     </div>
-
     <div class="misalign-card">
       <h3>Charging too much for the wrong things</h3>
-      <p>3PLs frequently over-charge for services that are low-effort and under-charge for services that are genuinely difficult. The result is a bill that feels wrong — because it is wrong — even if the total is defensible.</p>
+      <p>3PLs frequently over-charge for services that are low-effort and under-charge for services that are genuinely difficult. The result is a bill that feels wrong &mdash; because it is wrong &mdash; even if the total is defensible.</p>
     </div>
-
     <div class="misalign-card">
       <h3>Measuring the wrong KPIs</h3>
       <p>If you&rsquo;re not measuring the right things, you won&rsquo;t see improvement even when it&rsquo;s happening. And you won&rsquo;t see deterioration until it&rsquo;s a crisis. Most brands have no SLA dashboard at all.</p>
     </div>
-
     <div class="misalign-card">
       <h3>Returns policies that don&rsquo;t make sense</h3>
-      <p>Vague, unpriced, or completely unmanaged returns create a black hole of cost and confusion. This is one of the most common sources of brand-3PL tension — and almost always preventable.</p>
+      <p>Vague, unpriced, or completely unmanaged returns create a black hole of cost and confusion. This is one of the most common sources of brand-3PL tension &mdash; and almost always preventable.</p>
     </div>
-
     <div class="misalign-card">
       <h3>Treating distribution as a commodity</h3>
-      <p>When brands treat their 3PL like a utility — interchangeable, low-value, easily replaced — they stop investing in the relationship. That&rsquo;s when performance starts to slip and tensions start to rise.</p>
+      <p>When brands treat their 3PL like a utility &mdash; interchangeable, low-value, easily replaced &mdash; they stop investing in the relationship. That&rsquo;s when performance starts to slip and tensions start to rise.</p>
     </div>
-
     <div class="misalign-card">
       <h3>No third-party perspective</h3>
-      <p>Both sides think they&rsquo;re right. Both sides have evidence. Without an objective third party who understands both sides of the relationship, the dispute just escalates — until someone threatens a lawyer.</p>
+      <p>Both sides think they&rsquo;re right. Both sides have evidence. Without an objective third party who understands both sides of the relationship, the dispute just escalates &mdash; until someone threatens a lawyer.</p>
     </div>
-
   </div>
 </div>
 
 <!-- WHAT I DO -->
 <div class="bring-section">
   <h2>What <span class="accent">Mediation</span> Actually Looks Like</h2>
-  <p class="intro">I come in without a side. I assess both the brand&rsquo;s expectations and the 3PL&rsquo;s performance objectively — and I tell both parties what&rsquo;s reasonable and what isn&rsquo;t. The goal isn&rsquo;t excellence. It&rsquo;s measurable improvement, week over week.</p>
+  <p class="intro">I come in without a side. I assess both the brand&rsquo;s expectations and the 3PL&rsquo;s performance objectively &mdash; and I tell both parties what&rsquo;s reasonable and what isn&rsquo;t. The goal isn&rsquo;t excellence. It&rsquo;s measurable improvement, week over week.</p>
   <ul class="bring-list">
     <li>Objective assessment of both sides</li>
-    <li>SLA and KPI audit — are you measuring the right things?</li>
-    <li>Billing review — line by line</li>
+    <li>SLA and KPI audit &mdash; are you measuring the right things?</li>
+    <li>Billing review &mdash; line by line</li>
     <li>Value-added services repricing</li>
     <li>Returns policy review and restructuring</li>
     <li>Expectation reset with both parties</li>
@@ -178,14 +203,14 @@ a {color:#6699ff;text-decoration:none;}
     <li>Ongoing performance monitoring</li>
     <li>Exit planning if mediation fails</li>
     <li>Documentation if legal action becomes unavoidable</li>
-    <li>Honest advice — even when it&rsquo;s not what you want to hear</li>
+    <li>Honest advice &mdash; even when it&rsquo;s not what you want to hear</li>
   </ul>
 </div>
 
 <!-- CTA -->
 <div class="cta">
   <h2>Before Anyone Calls a Lawyer.</h2>
-  <p>A free 30-minute call. Tell me what&rsquo;s going on. I&rsquo;ll tell you honestly what I think is actually happening — and whether it&rsquo;s fixable.</p>
+  <p>A free 30-minute call. Tell me what&rsquo;s going on. I&rsquo;ll tell you honestly what I think is actually happening &mdash; and whether it&rsquo;s fixable.</p>
   <a href="mailto:max+fighting@3pl-expert.com?subject=3PL%20Dispute%20Help" class="btn">Email Max</a>
 </div>
 
