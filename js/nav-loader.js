@@ -4,6 +4,7 @@
   var emailMap = {
     'index2.html':       'max+home@3pl-expert.com',
     'selection2.html':   'max+selection@3pl-expert.com',
+    'looking2.html':     'max+looking@3pl-expert.com',
     'problems2.html':    'max+problems@3pl-expert.com',
     'negotiation2.html': 'max+negotiation@3pl-expert.com',
     'onboarding2.html':  'max+onboarding@3pl-expert.com',
