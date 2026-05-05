@@ -5,10 +5,10 @@
     'index2.html':       'max+home@3pl-expert.com',
     'selection2.html':   'max+selection@3pl-expert.com',
     'looking2.html':     'max+looking@3pl-expert.com',
-    'problems2.html':    'max+problems@3pl-expert.com',
-    'negotiation2.html': 'max+negotiation@3pl-expert.com',
-    'onboarding2.html':  'max+onboarding@3pl-expert.com',
-    'leaving2.html':     'max+leaving@3pl-expert.com',
+    'fixing2.html':       'max+fixing@3pl-expert.com',
+    'negotiating2.html': 'max+negotiating@3pl-expert.com',
+    
+    'moving2.html':       'max+moving@3pl-expert.com',
     'fighting2.html':    'max+fighting@3pl-expert.com',
     'wms2.html':         'max+software@3pl-expert.com',
     'about2.html':       'max+about@3pl-expert.com'
