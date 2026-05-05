@@ -1,3 +1,23 @@
+<style>
+/* NAV — sticky float */
+#main-nav {position:sticky;top:0;z-index:100;}
+.menu-bar {background:#0a0a0a;border-bottom:1px solid rgba(255,255,255,0.1);}
+.mb-inner {display:flex;align-items:center;justify-content:space-between;width:92%;max-width:1600px;margin:0 auto;padding:10px 0;gap:16px;}
+.mb-left {display:flex;align-items:center;gap:12px;flex-shrink:0;}
+.mb-logo img {height:32px;display:block;}
+.mb-face {width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #6699ff;flex-shrink:0;}
+.mb-nav {display:none;align-items:center;gap:6px;flex:1;justify-content:center;}
+@media (min-width:800px){.mb-nav {display:flex;}}
+.mb-nav a {display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 10px;border-radius:6px;text-decoration:none;transition:background 0.2s;}
+.mb-nav a:hover {background:rgba(102,153,255,0.08);}
+.mb-nav a.active {background:rgba(102,153,255,0.12);}
+.mb-nav a img {width:36px;height:36px;object-fit:contain;}
+.mb-nav a span {font-family:'Plus Jakarta Sans',sans-serif;font-size:0.7rem;font-weight:600;color:#aaa;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;}
+.mb-nav a:hover span, .mb-nav a.active span {color:#fff;}
+.mb-cta {background:#6699ff;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:0.9rem;white-space:nowrap;flex-shrink:0;}
+.mb-cta:hover {background:#4d80e6;color:#fff;}
+</style>
+
 <div class="menu-bar">
   <div class="mb-inner">
     <div class="mb-left">
@@ -5,14 +25,26 @@
       <img src="/Images/bio-pic.webp" alt="Max Ferrigni" class="mb-face">
     </div>
     <nav class="mb-nav">
-      <a href="/selection2.html">Find a 3PL</a>
-      <a href="/problems2.html">Fix Problems</a>
-      <a href="/negotiation2.html">Negotiate</a>
-      <a href="/onboarding2.html">Onboard</a>
-      <a href="/leaving2.html">Leaving</a>
-      <a href="/fighting2.html">Fighting</a>
-      <a href="/wms2.html">Software</a>
-      <a href="/about2.html">About</a>
+      <a href="/fighting2.html">
+        <img src="/Images/navbanner/nav_fighting.png" alt="Fighting">
+        <span>Fighting</span>
+      </a>
+      <a href="/problems2.html">
+        <img src="/Images/navbanner/nav_fixing.png" alt="Fixing">
+        <span>Fixing</span>
+      </a>
+      <a href="/selection2.html">
+        <img src="/Images/navbanner/nav_looking.png" alt="Looking">
+        <span>Looking</span>
+      </a>
+      <a href="/negotiation2.html">
+        <img src="/Images/navbanner/nav_negotiating.png" alt="Negotiating">
+        <span>Negotiating</span>
+      </a>
+      <a href="/leaving2.html">
+        <img src="/Images/navbanner/nav_moving.png" alt="Moving">
+        <span>Moving</span>
+      </a>
     </nav>
     <a href="#" class="mb-cta" id="nav-email-btn">Email Max</a>
   </div>
