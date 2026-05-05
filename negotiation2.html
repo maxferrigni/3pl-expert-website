@@ -6,6 +6,7 @@
 <title>Negotiate Your 3PL Contract &rsaquo; It&rsquo;s Not Just About the Rate</title>
 <meta name="description" content="The lowest rate on paper often means the highest bill in practice. 30 years negotiating 3PL contracts. Here's what actually matters.">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap' type='text/css' media='all' />
+<link rel='stylesheet' href='/css/shared.css' type='text/css' media='all' />
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -28,14 +29,7 @@ a {color:#6699ff;text-decoration:none;}
 /* Sticky nav wrapper */
 #main-nav {position:sticky;top:0;z-index:100;}
 
-/* Menu Bar */
-.menu-bar {background:#0a0a0a;padding:15px 0;border-bottom:1px solid rgba(255,255,255,0.1);}
-.mb-inner {display:flex;align-items:center;justify-content:space-between;width:92%;max-width:1600px;margin:0 auto;gap:20px;}
-.mb-left {display:flex;align-items:center;gap:14px;flex-shrink:0;}
-.mb-logo img {height:32px;}
-.mb-face {width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #6699ff;}
-.mb-cta {background:#6699ff;color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;white-space:nowrap;flex-shrink:0;}
-.mb-cta:hover {background:#4d80e6;color:#fff;}
+
 .mb-nav {display:none;align-items:center;gap:22px;}
 @media (min-width:800px){.mb-nav {display:flex;}}
 .mb-nav a {color:#aaa;font-size:0.85rem;font-weight:500;white-space:nowrap;transition:color 0.2s;}
@@ -110,29 +104,12 @@ a {color:#6699ff;text-decoration:none;}
 .cta a.btn:hover {background:#4d80e6;}
 
 /* Footer */
-.site-footer {background:#111;border-top:1px solid rgba(255,255,255,0.07);padding:60px 0 0;}
-.footer-inner {width:92%;max-width:1600px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:50px;}
-@media (min-width:800px){.footer-inner {grid-template-columns:280px 1fr;}}
-.footer-logo {height:28px;margin-bottom:14px;display:block;}
-.footer-tagline {color:#888;font-size:0.85rem;line-height:1.6;margin:0 0 16px;}
-.footer-linkedin {display:inline-flex;align-items:center;gap:8px;color:#6699ff;font-size:0.85rem;font-weight:600;margin-bottom:10px;display:flex;}
-.footer-linkedin:hover {color:#fff;}
-.footer-email {color:#888;font-size:0.85rem;display:block;}
-.footer-email:hover {color:#6699ff;}
-.footer-nav {display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
-@media (max-width:600px){.footer-nav {grid-template-columns:1fr 1fr;}}
-.footer-col {display:flex;flex-direction:column;gap:10px;}
-.footer-col-title {font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#aaa;margin-bottom:4px;}
-.footer-col a {color:#888;font-size:0.875rem;transition:color 0.2s;}
-.footer-col a:hover {color:#fff;}
-.footer-bottom {width:92%;max-width:1600px;margin:0 auto;padding:20px 0;border-top:1px solid rgba(255,255,255,0.05);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;}
-.footer-bottom span {color:#555;font-size:0.8rem;}
-.footer-disclaimer {color:#444;font-size:0.8rem;font-style:italic;}
+
 </style>
 </head>
 <body>
 
-<!-- SHARED NAV — edit /nav.html to update navigation across all pages -->
+<!-- SHARED NAV — edit /includes/nav.html to update -->
 <div id="main-nav"></div>
 <script src="/js/nav-loader.js"></script>
 
@@ -245,7 +222,7 @@ a {color:#6699ff;text-decoration:none;}
   <a href="mailto:max+negotiation@3pl-expert.com?subject=3PL%20Contract%20Negotiation" class="btn">Email Max</a>
 </div>
 
-<!-- SHARED FOOTER — edit /includes/footer.html to update across all pages -->
+<!-- SHARED FOOTER — edit /includes/footer.html to update -->
 <div id="main-footer"></div>
 
 </body>
