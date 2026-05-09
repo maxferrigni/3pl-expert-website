@@ -49,11 +49,12 @@ a {color:#6699ff;text-decoration:none;}
 .help-section {width:92%;max-width:1600px;margin:0 auto;padding:60px 0;}
 .help-section h2 {text-align:center;color:#6699ff;font-size:2rem;margin-bottom:12px;}
 .help-section p.intro {text-align:center;color:#aaa;max-width:700px;margin:0 auto 50px;font-size:1.1rem;}
-.help-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px;}
-.help-tile {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:30px 24px;text-align:center;text-decoration:none;color:#fff;transition:all 0.2s;display:flex;flex-direction:column;}
+.help-grid {display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto;}
+@media (min-width:900px){.help-grid {grid-template-columns:repeat(5,1fr);max-width:100%;}}
+.help-tile {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:30px 20px;text-align:center;text-decoration:none;color:#fff;transition:all 0.2s;display:flex;flex-direction:column;}
 .help-tile:hover {border-color:#6699ff;background:rgba(102,153,255,0.06);transform:translateY(-3px);color:#fff;}
-.help-tile h3 {font-size:1.15rem;font-weight:700;margin:0 0 10px;}
-.help-tile p {color:#aaa;font-size:0.9rem;line-height:1.5;margin:0;flex:1;}
+.help-tile h3 {font-size:1.1rem;font-weight:700;margin:0 0 10px;}
+.help-tile p {color:#aaa;font-size:0.88rem;line-height:1.5;margin:0;flex:1;}
 .help-tile .arrow {color:#6699ff;font-weight:600;margin-top:14px;font-size:0.85rem;}
 
 /* Resource Links */
@@ -100,30 +101,36 @@ a {color:#6699ff;text-decoration:none;}
 <!-- HOW I HELP -->
 <div class="help-section">
   <h2>How I Help</h2>
-  <p class="intro">Four common situations. Pick the one that sounds like you.</p>
+  <p class="intro">Five situations. Pick the one that sounds like you right now.</p>
   <div class="help-grid">
 
-    <a href="/selection2.html" class="help-tile">
-      <h3>Find The Right 3PL</h3>
-      <p>Independent selection help &mdash; not the 3PL with the best sales pitch.</p>
+    <a href="/fighting2.html" class="help-tile">
+      <h3>Fighting</h3>
+      <p>In a dispute with your 3PL? Before anyone calls a lawyer, let&rsquo;s talk.</p>
       <div class="arrow">Learn more &rsaquo;</div>
     </a>
 
-    <a href="/problems2.html" class="help-tile">
-      <h3>Fix 3PL Problems</h3>
-      <p>Diagnose what&rsquo;s broken. Decide whether to fix it or leave.</p>
+    <a href="/fixing2.html" class="help-tile">
+      <h3>Fixing</h3>
+      <p>Something is broken. Let&rsquo;s diagnose it honestly &mdash; including whether it&rsquo;s you.</p>
       <div class="arrow">Learn more &rsaquo;</div>
     </a>
 
-    <a href="/negotiation2.html" class="help-tile">
-      <h3>Negotiate Your Contract</h3>
-      <p>Every 3PL contract has room. Most brands never push.</p>
+    <a href="/looking2.html" class="help-tile">
+      <h3>Looking</h3>
+      <p>Searching for a new 3PL? You should always be looking. Here&rsquo;s how to do it right.</p>
       <div class="arrow">Learn more &rsaquo;</div>
     </a>
 
-    <a href="/onboarding2.html" class="help-tile">
-      <h3>Onboard a New 3PL</h3>
-      <p>The first 90 days make or break the relationship.</p>
+    <a href="/negotiating2.html" class="help-tile">
+      <h3>Haggling</h3>
+      <p>The rate on paper never matches the bill. Know what to push on before you sign.</p>
+      <div class="arrow">Learn more &rsaquo;</div>
+    </a>
+
+    <a href="/moving2.html" class="help-tile">
+      <h3>Moving</h3>
+      <p>Leaving a 3PL and onboarding a new one. Zero downtime is the only acceptable outcome.</p>
       <div class="arrow">Learn more &rsaquo;</div>
     </a>
 
@@ -135,9 +142,8 @@ a {color:#6699ff;text-decoration:none;}
   <h3>Other Resources</h3>
   <div class="resource-links">
     <a href="/selection2.html">3PLs Worth Considering</a>
-    <a href="/leaving2.html">Thinking of Leaving?</a>
-    <span class="coming">Thinking of Suing? (coming soon)</span>
-    <span class="coming">Best WMS Systems (coming soon)</span>
+    <a href="/about2.html">About Max</a>
+    <span class="coming">WMS Software Guide (coming soon)</span>
   </div>
 </div>
 
