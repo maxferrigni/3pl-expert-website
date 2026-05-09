@@ -26,19 +26,15 @@
 body {background:#0a0a0a;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;margin:0;line-height:1.6;}
 a {color:#6699ff;text-decoration:none;}
 
-
-
-
-
 /* Hero */
 .hero {width:92%;max-width:1600px;margin:0 auto;padding:80px 0 50px;text-align:center;}
 .hero .label {font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#6699ff;margin-bottom:18px;}
 .hero h1 {font-size:44px;line-height:1.05;font-weight:700;margin:0 0 20px;}
 @media (min-width:900px){.hero h1 {font-size:56px;}}
 .hero h1 .accent {color:#6699ff;}
-.hero .sub {font-size:1.15rem;color:#aaa;max-width:680px;margin:0 auto;line-height:1.6;}
+.hero .sub {font-size:1.15rem;color:#aaa;max-width:700px;margin:0 auto;line-height:1.6;}
 
-/* Real Talk Block */
+/* Real Talk */
 .real-talk {width:92%;max-width:1600px;margin:60px auto 0;}
 .rt-header {display:flex;align-items:center;gap:16px;margin-bottom:30px;}
 .rt-badge {background:#6699ff;color:#fff;font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:6px 14px;border-radius:4px;white-space:nowrap;}
@@ -48,10 +44,11 @@ a {color:#6699ff;text-decoration:none;}
 .rt-body p:last-child {margin:0;}
 .rt-callout {font-size:1.3rem;font-weight:700;color:#fff;line-height:1.4;border-left:3px solid #6699ff;padding-left:20px;margin:30px 0;}
 
-/* Fault Section */
+/* Fault cards */
 .fault-section {width:92%;max-width:1600px;margin:70px auto 0;}
-.fault-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 30px;color:#fff;}
+.fault-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 14px;color:#fff;}
 .fault-section h2 .accent {color:#6699ff;}
+.fault-section .intro {color:#bbb;font-size:1.05rem;line-height:1.7;margin-bottom:36px;max-width:900px;}
 .fault-grid {display:grid;grid-template-columns:1fr;gap:16px;}
 @media (min-width:700px){.fault-grid {grid-template-columns:1fr 1fr;}}
 @media (min-width:1100px){.fault-grid {grid-template-columns:1fr 1fr 1fr;}}
@@ -60,7 +57,7 @@ a {color:#6699ff;text-decoration:none;}
 .fault-card h3 {font-size:1rem;font-weight:700;color:#fff;margin:0 0 8px;}
 .fault-card p {font-size:0.9rem;color:#aaa;line-height:1.6;margin:0;}
 
-/* Amber callout */
+/* Amber */
 .money-block {width:92%;max-width:1600px;margin:70px auto 0;}
 .money-inner {background:rgba(245,166,35,0.05);border-left:4px solid #f5a623;border-radius:0 8px 8px 0;padding:36px 32px;}
 .money-inner h2 {color:#f5a623;font-size:1.5rem;margin:0 0 14px;}
@@ -68,7 +65,7 @@ a {color:#6699ff;text-decoration:none;}
 .money-inner p:last-child {margin:0;}
 .money-inner strong {color:#fff;}
 
-/* What I Do */
+/* What I do */
 .what-section {width:92%;max-width:1600px;margin:70px auto 0;}
 .what-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 14px;}
 .what-section h2 .accent {color:#6699ff;}
@@ -85,8 +82,6 @@ a {color:#6699ff;text-decoration:none;}
 .cta p {color:#aaa;margin-bottom:28px;font-size:1.05rem;}
 .cta a.btn {background:#6699ff;color:#fff;padding:16px 40px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1.05rem;display:inline-block;}
 .cta a.btn:hover {background:#4d80e6;}
-
-
 </style>
 </head>
 <body>
@@ -95,19 +90,72 @@ a {color:#6699ff;text-decoration:none;}
 <div id="main-nav"></div>
 <script src="/js/nav-loader.js"></script>
 
+<!-- HERO -->
+<div class="hero">
+  <div class="label">Let&rsquo;s Be Honest</div>
+  <h1>Your 3PL Problems?<br/>They&rsquo;re Probably<br/><span class="accent">Your Fault.</span></h1>
+  <p class="sub">That&rsquo;s not an insult. It&rsquo;s the most useful thing anyone in this industry will tell you &mdash; and it&rsquo;s the starting point for actually fixing things.</p>
+</div>
+
+<!-- REAL TALK -->
+<div class="real-talk">
+  <div class="rt-header">
+    <span class="rt-badge">Real Talk</span>
+    <div class="rt-line"></div>
+  </div>
+  <div class="rt-body">
+    <p>Without knowing anything about your brand, your history, or your 3PL &mdash; I am 99% confident that your distribution problems are primarily of your own making.</p>
+    <div class="rt-callout">&ldquo;The 3PL is just the last one holding the bag.&rdquo;</div>
+    <p>Here&rsquo;s the thing about distribution: picking, packing, receiving, inventory control &mdash; the fundamentals haven&rsquo;t changed much in decades. The warehouse management systems are the same. The order management systems are the same. The people working in these facilities move from warehouse to warehouse, change job titles, and the 3PLs themselves get bought and sold constantly &mdash; but the nuts and bolts of distribution are largely unchanged.</p>
+    <p>So if the industry is stable, why is your operation a mess? Keep reading.</p>
+  </div>
+</div>
+
+<!-- FAULT CARDS -->
+<div class="fault-section">
+  <h2>The Ways Brands <span class="accent">Create Their Own Problems</span></h2>
+  <p class="intro">These aren&rsquo;t accusations. They&rsquo;re patterns I&rsquo;ve seen hundreds of times. If one of these sounds familiar, that&rsquo;s where we start.</p>
+  <div class="fault-grid">
+    <div class="fault-card">
+      <div class="num">01</div>
+      <h3>Unrealistic cost and service targets</h3>
+      <p>You&rsquo;ve set cost targets that are impossible to hit without cutting corners, or service targets that would challenge a company ten times your size. Your 3PL is failing because you&rsquo;ve defined failure as the only possible outcome.</p>
+    </div>
+    <div class="fault-card">
+      <div class="num">02</div>
+      <h3>Constant changes with no customer benefit</h3>
+      <p>You&rsquo;ve made so many internal changes &mdash; product numbers, packaging, receiving methods, SKU structures &mdash; that have no benefit to your end customer but make it nearly impossible for your 3PL to operate consistently.</p>
+    </div>
+    <div class="fault-card">
+      <div class="num">03</div>
+      <h3>Allowing last-minute order changes</h3>
+      <p>You let customers change orders at the last second. Every exception you allow teaches your customers that exceptions are normal &mdash; and destroys your 3PL&rsquo;s ability to plan.</p>
+    </div>
+    <div class="fault-card">
+      <div class="num">04</div>
+      <h3>Not empowering your 3PL to decide</h3>
+      <p>You&rsquo;ve created a culture where your 3PL can&rsquo;t make a single decision without your approval. You&rsquo;ve micromanaged them into paralysis, then blamed them for being slow.</p>
+    </div>
+    <div class="fault-card">
+      <div class="num">05</div>
+      <h3>Competing with Godzilla</h3>
+      <p>Your customers get next-day delivery from Amazon. You&rsquo;re trying to match that with a $5M brand and a regional 3PL. That&rsquo;s not a logistics problem &mdash; it&rsquo;s a strategy problem.</p>
+    </div>
+    <div class="fault-card">
+      <div class="num">06</div>
+      <h3>Poor communication of changes</h3>
+      <p>New products, new packaging, new retail requirements, new carriers &mdash; introduced without warning, without lead time, without documentation. Your 3PL is always reacting, never prepared.</p>
+    </div>
+  </div>
+</div>
+
 <!-- MONEY BLOCK -->
 <div class="money-block">
   <div class="money-inner">
     <h2>&#9888; The Most Important Thing Nobody Tells You: Your 3PL Has to Make Money.</h2>
-    <p>
-      It sounds counterintuitive, but you absolutely need your 3PL to be cash flow positive. Not driving Porsches &mdash; but paying their rent, paying their people, and operating at a profit.
-    </p>
-    <p>
-      A 3PL under financial stress cuts corners. They lose good staff. They defer maintenance. They take on too many clients to cover a bad lease. <strong>When your 3PL is struggling financially, your freight is the last thing they&rsquo;re focused on.</strong>
-    </p>
-    <p>
-      The goal isn&rsquo;t to squeeze every last cent out of your 3PL contract. The goal is to find the equilibrium &mdash; where you&rsquo;re paying a fair price for a stable, well-run operation that you can depend on. That&rsquo;s what actually protects your business.
-    </p>
+    <p>It sounds counterintuitive, but you absolutely need your 3PL to be cash flow positive. Not driving Porsches &mdash; but paying their rent, paying their people, and operating at a profit.</p>
+    <p>A 3PL under financial stress cuts corners. They lose good staff. They defer maintenance. They take on too many clients to cover a bad lease. <strong>When your 3PL is struggling financially, your freight is the last thing they&rsquo;re focused on.</strong></p>
+    <p>The goal isn&rsquo;t to squeeze every last cent out of your 3PL contract. The goal is to find the equilibrium &mdash; where you&rsquo;re paying a fair price for a stable, well-run operation that you can depend on. That&rsquo;s what actually protects your business.</p>
   </div>
 </div>
 
