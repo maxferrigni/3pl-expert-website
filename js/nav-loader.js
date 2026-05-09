@@ -2,19 +2,19 @@
 (function() {
 
   var emailMap = {
-    'index2.html':       'max+home@3pl-expert.com',
-    'selection2.html':   'max+selection@3pl-expert.com',
-    'looking2.html':     'max+looking@3pl-expert.com',
-    'fixing2.html':       'max+fixing@3pl-expert.com',
-    'negotiating2.html': 'max+negotiating@3pl-expert.com',
+    'index.html':       'max+home@3pl-expert.com',
+    'selection.html':   'max+selection@3pl-expert.com',
+    'looking.html':     'max+looking@3pl-expert.com',
+    'fixing.html':       'max+fixing@3pl-expert.com',
+    'negotiating.html': 'max+negotiating@3pl-expert.com',
     
-    'moving2.html':       'max+moving@3pl-expert.com',
-    'fighting2.html':    'max+fighting@3pl-expert.com',
+    'moving.html':       'max+moving@3pl-expert.com',
+    'fighting.html':    'max+fighting@3pl-expert.com',
     'wms2.html':         'max+software@3pl-expert.com',
-    'about2.html':       'max+about@3pl-expert.com'
+    'about.html':       'max+about@3pl-expert.com'
   };
 
-  var page = window.location.pathname.split('/').pop() || 'index2.html';
+  var page = window.location.pathname.split('/').pop() || 'index.html';
 
   // Load NAV
   fetch('/includes/nav.html')
