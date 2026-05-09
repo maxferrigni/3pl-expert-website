@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Fighting Your 3PL &rsaquo; Before You Do Something You&rsquo;ll Regret</title>
-<meta name="description" content="I'm not a lawyer and I won't give you legal advice. Here's my legal advice: never sue your 3PL. Here's why — and what to do instead.">
+<title>Fighting Your 3PL &rsaquo; How You Handle It Is Critical</title>
+<meta name="description" content="At some point you'll fight with your 3PL. Every brand does. How you handle it determines whether your business survives it.">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap' type='text/css' media='all' />
 <link rel='stylesheet' href='/css/shared.css' type='text/css' media='all' />
 <script type="text/javascript">
@@ -26,163 +26,211 @@
 body {background:#0a0a0a;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;margin:0;line-height:1.6;}
 a {color:#6699ff;text-decoration:none;}
 
-/* Hero */
-.hero {width:92%;max-width:1600px;margin:0 auto;padding:80px 0 50px;text-align:center;}
-.hero .label {font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#6699ff;margin-bottom:18px;}
-.hero h1 {font-size:44px;line-height:1.05;font-weight:700;margin:0 0 20px;}
-@media (min-width:900px){.hero h1 {font-size:56px;}}
+/* Hero — tighter */
+.hero {width:92%;max-width:1600px;margin:0 auto;padding:50px 0 30px;text-align:center;}
+.hero .label {font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#6699ff;margin-bottom:14px;}
+.hero h1 {font-size:44px;line-height:1.05;font-weight:700;margin:0 0 16px;}
+@media (min-width:900px){.hero h1 {font-size:58px;}}
 .hero h1 .accent {color:#6699ff;}
-.hero .sub {font-size:1.15rem;color:#aaa;max-width:700px;margin:0 auto;line-height:1.6;}
+.hero .sub {font-size:1.1rem;color:#aaa;max-width:660px;margin:0 auto;line-height:1.6;}
+
+/* Stat band */
+.stat-band {width:92%;max-width:1600px;margin:40px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);padding:30px 0;}
+@media (max-width:600px){.stat-band {grid-template-columns:1fr;}}
+.stat-item {text-align:center;}
+.stat-item .num {font-size:2.2rem;font-weight:800;color:#fff;display:block;line-height:1;}
+.stat-item .lbl {font-size:0.8rem;color:#aaa;margin-top:6px;display:block;line-height:1.4;}
 
 /* Opening block */
-.joke-block {width:92%;max-width:1600px;margin:60px auto 0;}
-.joke-inner {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:40px 36px;}
-.joke-inner p {font-size:1.15rem;color:#ccc;line-height:1.8;max-width:900px;margin:0 0 20px;}
-.joke-inner p:last-child {margin:0;}
-.joke-inner .punchline {font-size:1.4rem;font-weight:700;color:#fff;line-height:1.4;border-left:3px solid #6699ff;padding-left:20px;margin:24px 0;}
+.opening {width:92%;max-width:1600px;margin:50px auto 0;display:grid;grid-template-columns:1fr;gap:24px;}
+@media (min-width:900px){.opening {grid-template-columns:1fr 1fr;gap:40px;}}
+.opening-card {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:32px 28px;}
+.opening-card h3 {font-size:1.15rem;font-weight:700;color:#fff;margin:0 0 12px;}
+.opening-card h3 .accent {color:#6699ff;}
+.opening-card p {font-size:0.95rem;color:#aaa;line-height:1.7;margin:0;}
 
-/* Amber warning */
-.warning-block {width:92%;max-width:1600px;margin:60px auto 0;}
-.warning-inner {background:rgba(245,166,35,0.05);border-left:4px solid #f5a623;border-radius:0 8px 8px 0;padding:36px 32px;}
-.warning-inner h2 {color:#f5a623;font-size:1.5rem;margin:0 0 14px;}
-.warning-inner p {color:#ddd;font-size:1.05rem;line-height:1.75;margin:0 0 16px;max-width:900px;}
+/* Real Talk */
+.real-talk {width:92%;max-width:1600px;margin:50px auto 0;}
+.rt-header {display:flex;align-items:center;gap:16px;margin-bottom:24px;}
+.rt-badge {background:#6699ff;color:#fff;font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:6px 14px;border-radius:4px;white-space:nowrap;}
+.rt-line {flex:1;height:1px;background:rgba(255,255,255,0.1);}
+.rt-body {font-size:1.05rem;color:#ccc;line-height:1.8;max-width:900px;}
+.rt-body p {margin:0 0 18px;}
+.rt-body p:last-child {margin:0;}
+.rt-callout {font-size:1.25rem;font-weight:700;color:#fff;line-height:1.4;border-left:3px solid #6699ff;padding-left:20px;margin:24px 0;}
+
+/* Amber */
+.warning-block {width:92%;max-width:1600px;margin:50px auto 0;}
+.warning-inner {background:rgba(245,166,35,0.05);border-left:4px solid #f5a623;border-radius:0 8px 8px 0;padding:32px 28px;}
+.warning-inner h2 {color:#f5a623;font-size:1.4rem;margin:0 0 12px;}
+.warning-inner p {color:#ddd;font-size:1rem;line-height:1.75;margin:0 0 14px;max-width:900px;}
 .warning-inner p:last-child {margin:0;}
 .warning-inner strong {color:#fff;}
 
 /* Better words */
-.words-section {width:92%;max-width:1600px;margin:70px auto 0;}
-.words-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 14px;color:#fff;}
+.words-section {width:92%;max-width:1600px;margin:50px auto 0;}
+.words-section h2 {font-size:1.6rem;font-weight:700;margin:0 0 10px;color:#fff;}
 .words-section h2 .accent {color:#6699ff;}
-.words-section .intro {color:#bbb;font-size:1.05rem;line-height:1.7;margin-bottom:30px;max-width:900px;}
+.words-section .intro {color:#bbb;font-size:1rem;line-height:1.7;margin-bottom:24px;max-width:900px;}
 .words-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
-.word-card {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:16px 20px;font-size:0.95rem;color:#fff;font-weight:600;}
-.word-card .sub {font-size:0.8rem;color:#aaa;font-weight:400;margin-top:4px;line-height:1.4;}
+.word-card {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:14px 18px;font-size:0.95rem;color:#fff;font-weight:600;}
+.word-card .sub {font-size:0.78rem;color:#aaa;font-weight:400;margin-top:4px;line-height:1.4;}
 
 /* Never leave */
-.never-section {width:92%;max-width:1600px;margin:70px auto 0;}
-.never-inner {background:rgba(102,153,255,0.05);border:1px solid rgba(102,153,255,0.2);border-radius:8px;padding:40px 36px;}
-.never-inner h2 {font-size:1.5rem;font-weight:700;color:#fff;margin:0 0 16px;}
-.never-inner p {color:#bbb;font-size:1.05rem;line-height:1.75;max-width:900px;margin:0 0 16px;}
+.never-section {width:92%;max-width:1600px;margin:50px auto 0;}
+.never-inner {background:rgba(102,153,255,0.05);border:1px solid rgba(102,153,255,0.2);border-radius:8px;padding:32px 28px;}
+.never-inner h2 {font-size:1.4rem;font-weight:700;color:#fff;margin:0 0 14px;}
+.never-inner p {color:#bbb;font-size:1rem;line-height:1.75;max-width:900px;margin:0 0 14px;}
 .never-inner p:last-child {margin:0;}
 .never-inner strong {color:#fff;}
 
 /* Misalignment */
-.misalign-section {width:92%;max-width:1600px;margin:70px auto 0;}
-.misalign-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 14px;}
+.misalign-section {width:92%;max-width:1600px;margin:50px auto 0;}
+.misalign-section h2 {font-size:1.6rem;font-weight:700;margin:0 0 10px;}
 .misalign-section h2 .accent {color:#6699ff;}
-.misalign-section .intro {color:#bbb;font-size:1.05rem;line-height:1.7;margin-bottom:30px;max-width:900px;}
-.misalign-grid {display:grid;grid-template-columns:1fr;gap:16px;}
+.misalign-section .intro {color:#bbb;font-size:1rem;line-height:1.7;margin-bottom:24px;max-width:900px;}
+.misalign-grid {display:grid;grid-template-columns:1fr;gap:14px;}
 @media (min-width:700px){.misalign-grid {grid-template-columns:1fr 1fr;}}
 @media (min-width:1100px){.misalign-grid {grid-template-columns:1fr 1fr 1fr;}}
-.misalign-card {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:24px;}
-.misalign-card h3 {font-size:1rem;font-weight:700;color:#fff;margin:0 0 10px;}
-.misalign-card p {font-size:0.9rem;color:#aaa;line-height:1.6;margin:0;}
+.misalign-card {background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:22px;}
+.misalign-card h3 {font-size:0.95rem;font-weight:700;color:#fff;margin:0 0 8px;}
+.misalign-card p {font-size:0.88rem;color:#aaa;line-height:1.6;margin:0;}
 
 /* What I do */
-.bring-section {width:92%;max-width:1600px;margin:70px auto 0;}
-.bring-section h2 {font-size:1.8rem;font-weight:700;margin:0 0 14px;}
+.bring-section {width:92%;max-width:1600px;margin:50px auto 0;}
+.bring-section h2 {font-size:1.6rem;font-weight:700;margin:0 0 10px;}
 .bring-section h2 .accent {color:#6699ff;}
-.bring-section .intro {color:#bbb;font-size:1.05rem;line-height:1.7;margin-bottom:30px;max-width:900px;}
-.bring-list {list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:12px;}
+.bring-section .intro {color:#bbb;font-size:1rem;line-height:1.7;margin-bottom:24px;max-width:900px;}
+.bring-list {list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:10px;}
 @media (min-width:700px){.bring-list {grid-template-columns:1fr 1fr;}}
 @media (min-width:1100px){.bring-list {grid-template-columns:1fr 1fr 1fr 1fr;}}
-.bring-list li {display:flex;align-items:flex-start;gap:12px;font-size:0.95rem;color:#bbb;line-height:1.5;}
+.bring-list li {display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:#bbb;line-height:1.5;}
 .bring-list li::before {content:"→";color:#6699ff;font-weight:700;flex-shrink:0;}
 
 /* CTA */
-.cta {width:92%;max-width:900px;margin:80px auto 0;padding:60px 0 90px;text-align:center;border-top:1px solid rgba(255,255,255,0.07);}
-.cta h2 {font-size:1.9rem;margin-bottom:14px;}
-.cta p {color:#aaa;margin-bottom:28px;font-size:1.05rem;}
-.cta a.btn {background:#6699ff;color:#fff;padding:16px 40px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1.05rem;display:inline-block;}
+.cta {width:92%;max-width:900px;margin:60px auto 0;padding:50px 0 80px;text-align:center;border-top:1px solid rgba(255,255,255,0.07);}
+.cta h2 {font-size:1.8rem;margin-bottom:12px;}
+.cta p {color:#aaa;margin-bottom:24px;font-size:1rem;}
+.cta a.btn {background:#6699ff;color:#fff;padding:14px 36px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1rem;display:inline-block;}
 .cta a.btn:hover {background:#4d80e6;}
 </style>
 </head>
 <body>
 
-<!-- SHARED NAV — edit /includes/nav.html to update -->
+<!-- SHARED NAV -->
 <div id="main-nav"></div>
 <script src="/js/nav-loader.js"></script>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="label">Before You Do Something You&rsquo;ll Regret</div>
-  <h1>I Won&rsquo;t Give You<br/>Legal Advice.<br/><span class="accent">Here&rsquo;s My Legal Advice.</span></h1>
-  <p class="sub">Never sue your 3PL. It&rsquo;s one of the worst business decisions I&rsquo;ve ever seen &mdash; and I&rsquo;ve seen it a lot. Here&rsquo;s why, and what to do instead.</p>
+  <div class="label">It&rsquo;s Not If. It&rsquo;s When.</div>
+  <h1>At Some Point You&rsquo;ll Fight<br/>With Your 3PL.<br/><span class="accent">How You Handle It Is Critical.</span></h1>
+  <p class="sub">Every brand goes through it. Most handle it wrong. The ones that come out ahead aren&rsquo;t the ones who fought hardest &mdash; they&rsquo;re the ones who stayed objective.</p>
 </div>
 
-<!-- OPENING -->
-<div class="joke-block">
-  <div class="joke-inner">
-    <p>I know why you&rsquo;re here. You feel betrayed. You feel like your 3PL is stealing from you, destroying your brand, ruining your business. You&rsquo;ve heard the horror stories. Maybe you&rsquo;re living one.</p>
-    <div class="punchline">&ldquo;Even when the 3PL is terrible &mdash; and I&rsquo;ve worked with some truly terrible ones &mdash; suing them is still the wrong answer.&rdquo;</div>
-    <p>Here&rsquo;s the problem with the word &ldquo;terrible.&rdquo; It&rsquo;s one adjective. It&rsquo;s hyperbolic. It tries to summarize dozens of managers, hundreds of workers, millions of decisions, and years of operations with a single word. That&rsquo;s not analysis. That&rsquo;s frustration talking &mdash; and frustration makes terrible legal strategy.</p>
+<!-- STAT BAND -->
+<div class="stat-band">
+  <div class="stat-item">
+    <span class="num">30+</span>
+    <span class="lbl">Years watching brands<br/>fight their 3PLs</span>
+  </div>
+  <div class="stat-item">
+    <span class="num">~0%</span>
+    <span class="lbl">Of lawsuits that actually<br/>helped the brand win</span>
+  </div>
+  <div class="stat-item">
+    <span class="num">Most</span>
+    <span class="lbl">Problems are fixable<br/>before they escalate</span>
   </div>
 </div>
 
-<!-- RULE 1 — NEVER SUE -->
+<!-- OPENING CARDS -->
+<div class="opening">
+  <div class="opening-card">
+    <h3>What brands do <span class="accent">wrong</span></h3>
+    <p>They let frustration drive strategy. They threaten. They withhold payments. They call lawyers. They issue ultimatums. They make it personal. Every one of these moves costs money, burns relationships, and almost never produces the outcome they wanted.</p>
+  </div>
+  <div class="opening-card">
+    <h3>What brands do <span class="accent">right</span></h3>
+    <p>They get objective fast. They separate the emotion from the problem. They bring in someone who has seen both sides of the relationship and can tell them honestly what&rsquo;s reasonable, what isn&rsquo;t, and what actually needs to change.</p>
+  </div>
+</div>
+
+<!-- REAL TALK -->
+<div class="real-talk">
+  <div class="rt-header">
+    <span class="rt-badge">Real Talk</span>
+    <div class="rt-line"></div>
+  </div>
+  <div class="rt-body">
+    <p>Here&rsquo;s the problem with the word &ldquo;terrible.&rdquo; It&rsquo;s one adjective trying to summarize dozens of managers, hundreds of workers, millions of decisions. That&rsquo;s not analysis &mdash; that&rsquo;s frustration. And frustration makes terrible strategy.</p>
+    <div class="rt-callout">&ldquo;Even when the 3PL is genuinely bad, escalating rarely helps. Staying objective almost always does.&rdquo;</div>
+    <p>I&rsquo;ve been on both sides of this table for 30 years. I&rsquo;ve seen brands blow up relationships that were actually fixable. I&rsquo;ve seen 3PLs lose clients they could have kept. The fights that escalate almost always do so because nobody brought in an outside perspective early enough.</p>
+  </div>
+</div>
+
+<!-- RULE 1 -->
 <div class="warning-block">
   <div class="warning-inner">
     <h2>&#9888; Rule #1: Never Sue Your 3PL.</h2>
-    <p>Litigation is expensive, slow, and distracting. While you&rsquo;re fighting in court, your business still needs to ship. Your customers don&rsquo;t care about your lawsuit. Your retail partners don&rsquo;t care. Your investors don&rsquo;t care. <strong>The only people who benefit from a 3PL lawsuit are the lawyers.</strong></p>
-    <p>Even if you win, you&rsquo;ve spent months or years of leadership attention, legal fees, and emotional energy on a fight that did nothing to grow your business. And you almost certainly still had to find a new 3PL in the middle of it.</p>
-    <p>There is almost always a better path. The goal is to get to that path before someone files anything.</p>
+    <p>Litigation is expensive, slow, and distracting. While you&rsquo;re fighting in court, your business still needs to ship. Your customers don&rsquo;t care about your lawsuit. <strong>The only people who benefit from a 3PL lawsuit are the lawyers.</strong></p>
+    <p>Even if you win, you&rsquo;ve spent months or years of leadership attention and legal fees on a fight that did nothing to grow your business. There is almost always a better path. The goal is to find it before someone files anything.</p>
   </div>
 </div>
 
 <!-- BETTER WORDS -->
 <div class="words-section">
   <h2>Better Words Than <span class="accent">&ldquo;Terrible&rdquo;</span></h2>
-  <p class="intro">If you want to fix a problem, you have to describe it accurately. &ldquo;Terrible&rdquo; gets you nowhere. These words actually point to solutions.</p>
+  <p class="intro">If you want to fix a problem, you have to describe it accurately. These words point to actual solutions.</p>
   <div class="words-grid">
     <div class="word-card">Disorganized<div class="sub">Fixable with process and accountability</div></div>
-    <div class="word-card">Understaffed<div class="sub">Addressable in contract or through volume adjustment</div></div>
-    <div class="word-card">Poor leadership<div class="sub">Escalatable to ownership or senior management</div></div>
-    <div class="word-card">High turnover<div class="sub">A symptom &mdash; usually of compensation or culture</div></div>
-    <div class="word-card">Misaligned pricing<div class="sub">Renegotiable &mdash; and often the actual root cause</div></div>
-    <div class="word-card">Outdated systems<div class="sub">A selection problem &mdash; not necessarily a failure</div></div>
-    <div class="word-card">Poor communication<div class="sub">Solvable with the right escalation structure</div></div>
-    <div class="word-card">Measuring the wrong things<div class="sub">The most common problem &mdash; and the most fixable</div></div>
+    <div class="word-card">Understaffed<div class="sub">Addressable in contract or volume</div></div>
+    <div class="word-card">Poor leadership<div class="sub">Escalatable to ownership</div></div>
+    <div class="word-card">High turnover<div class="sub">Usually compensation or culture</div></div>
+    <div class="word-card">Misaligned pricing<div class="sub">Renegotiable — often the root cause</div></div>
+    <div class="word-card">Outdated systems<div class="sub">A selection problem, not a failure</div></div>
+    <div class="word-card">Poor communication<div class="sub">Solvable with the right structure</div></div>
+    <div class="word-card">Wrong metrics<div class="sub">Most common — and most fixable</div></div>
   </div>
 </div>
 
-<!-- RULE 2 — NEVER LEAVE -->
+<!-- RULE 2 -->
 <div class="never-section">
   <div class="never-inner">
-    <h2>Rule #2: Never Leave Your 3PL If You Can Avoid It.</h2>
-    <p>Your 3PL is not what makes or breaks your business. <strong>Sales make or break your business.</strong> A brand with strong sales can survive a mediocre 3PL. A brand with weak sales will struggle no matter how good their fulfillment is.</p>
-    <p>Leaving a 3PL is expensive, disruptive, and risky. It consumes leadership bandwidth, creates operational risk, and costs real money &mdash; in transition fees, duplicated overhead, and the inevitable downtime that comes from doing it wrong. If you can fix the relationship instead of ending it, that is almost always the better outcome.</p>
-    <p>My business is about helping brands be successful with their 3PL &mdash; not helping them find a new one. Moving is the last resort, not the first response.</p>
+    <h2>Rule #2: Never Leave If You Can Fix It.</h2>
+    <p>Your 3PL is not what makes or breaks your business. <strong>Sales make or break your business.</strong> A brand with strong sales can survive a mediocre 3PL. Leaving costs real money &mdash; transition fees, duplicated overhead, and the inevitable downtime that comes from doing it wrong.</p>
+    <p>If you can fix the relationship instead of ending it, that is almost always the better outcome. My job is to help you figure out which one is actually true in your situation &mdash; and then execute on it.</p>
   </div>
 </div>
 
 <!-- WHERE THINGS GO WRONG -->
 <div class="misalign-section">
   <h2>Where the <span class="accent">Real Problems</span> Usually Live</h2>
-  <p class="intro">Most 3PL disputes aren&rsquo;t about negligence or bad faith. They&rsquo;re about misalignment &mdash; between what&rsquo;s being done, what&rsquo;s being charged, and what&rsquo;s being measured.</p>
+  <p class="intro">Most 3PL disputes aren&rsquo;t negligence or bad faith. They&rsquo;re misalignment &mdash; between what&rsquo;s being done, what&rsquo;s being charged, and what&rsquo;s being measured.</p>
   <div class="misalign-grid">
     <div class="misalign-card">
       <h3>Value-added services billed hourly</h3>
-      <p>Kitting, gift wrapping, stickering, seasonal pack-out, special collateral &mdash; all billed at a catch-all hourly rate. The brand has no idea what they&rsquo;re getting per service. The 3PL has no incentive to be efficient. Nobody wins.</p>
+      <p>Kitting, stickering, gift wrapping all at a catch-all rate. Nobody knows what they&rsquo;re paying per service. Nobody has incentive to be efficient.</p>
     </div>
     <div class="misalign-card">
       <h3>Charging too much for the wrong things</h3>
-      <p>3PLs frequently over-charge for services that are low-effort and under-charge for services that are genuinely difficult. The result is a bill that feels wrong &mdash; because it is wrong &mdash; even if the total is defensible.</p>
+      <p>Over-charging for low-effort services, under-charging for hard ones. The bill feels wrong because it is wrong &mdash; even if the total is defensible.</p>
     </div>
     <div class="misalign-card">
-      <h3>Measuring the wrong KPIs</h3>
-      <p>If you&rsquo;re not measuring the right things, you won&rsquo;t see improvement even when it&rsquo;s happening. And you won&rsquo;t see deterioration until it&rsquo;s a crisis. Most brands have no SLA dashboard at all.</p>
+      <h3>No KPI dashboard</h3>
+      <p>If you&rsquo;re not measuring the right things, you won&rsquo;t see improvement when it&rsquo;s happening. Most brands have no SLA baseline at all.</p>
     </div>
     <div class="misalign-card">
-      <h3>Returns policies that don&rsquo;t make sense</h3>
-      <p>Vague, unpriced, or completely unmanaged returns create a black hole of cost and confusion. This is one of the most common sources of brand-3PL tension &mdash; and almost always preventable.</p>
+      <h3>Returns policies nobody understands</h3>
+      <p>Vague, unpriced returns create a black hole of cost and confusion. One of the most common sources of brand-3PL tension &mdash; and almost always preventable.</p>
     </div>
     <div class="misalign-card">
       <h3>Treating distribution as a commodity</h3>
-      <p>When brands treat their 3PL like a utility &mdash; interchangeable, low-value, easily replaced &mdash; they stop investing in the relationship. That&rsquo;s when performance starts to slip and tensions start to rise.</p>
+      <p>When brands stop investing in the relationship, performance slips. The 3PL feels it. Tensions rise. Both sides lose.</p>
     </div>
     <div class="misalign-card">
-      <h3>No third-party perspective</h3>
-      <p>Both sides think they&rsquo;re right. Both sides have evidence. Without an objective third party who understands both sides of the relationship, the dispute just escalates &mdash; until someone threatens a lawyer.</p>
+      <h3>No outside perspective</h3>
+      <p>Both sides think they&rsquo;re right. Both have evidence. Without someone who understands both sides objectively, it just escalates.</p>
     </div>
   </div>
 </div>
@@ -190,31 +238,31 @@ a {color:#6699ff;text-decoration:none;}
 <!-- WHAT I DO -->
 <div class="bring-section">
   <h2>What <span class="accent">Mediation</span> Actually Looks Like</h2>
-  <p class="intro">I come in without a side. I assess both the brand&rsquo;s expectations and the 3PL&rsquo;s performance objectively &mdash; and I tell both parties what&rsquo;s reasonable and what isn&rsquo;t. The goal isn&rsquo;t excellence. It&rsquo;s measurable improvement, week over week.</p>
+  <p class="intro">I come in without a side. I assess both parties objectively and tell both what&rsquo;s reasonable. The goal isn&rsquo;t excellence &mdash; it&rsquo;s measurable improvement, week over week.</p>
   <ul class="bring-list">
     <li>Objective assessment of both sides</li>
-    <li>SLA and KPI audit &mdash; are you measuring the right things?</li>
-    <li>Billing review &mdash; line by line</li>
+    <li>SLA and KPI audit</li>
+    <li>Billing review line by line</li>
     <li>Value-added services repricing</li>
-    <li>Returns policy review and restructuring</li>
+    <li>Returns policy restructuring</li>
     <li>Expectation reset with both parties</li>
-    <li>Improvement plan with clear milestones</li>
-    <li>Escalation structure so issues don&rsquo;t fester</li>
+    <li>Improvement plan with milestones</li>
+    <li>Escalation structure going forward</li>
     <li>Ongoing performance monitoring</li>
     <li>Exit planning if mediation fails</li>
-    <li>Documentation if legal action becomes unavoidable</li>
-    <li>Honest advice &mdash; even when it&rsquo;s not what you want to hear</li>
+    <li>Documentation if legal becomes unavoidable</li>
+    <li>Honest advice even when unwelcome</li>
   </ul>
 </div>
 
 <!-- CTA -->
 <div class="cta">
-  <h2>Before Anyone Calls a Lawyer.</h2>
-  <p>A free 30-minute call. Tell me what&rsquo;s going on. I&rsquo;ll tell you honestly what I think is actually happening &mdash; and whether it&rsquo;s fixable.</p>
+  <h2>Before Anyone Does Something They&rsquo;ll Regret.</h2>
+  <p>A free 30-minute call. Tell me what&rsquo;s going on. I&rsquo;ll tell you honestly what I think is happening &mdash; and whether it&rsquo;s fixable.</p>
   <a href="mailto:max+fighting@3pl-expert.com?subject=3PL%20Dispute%20Help" class="btn">Email Max</a>
 </div>
 
-<!-- SHARED FOOTER — edit /includes/footer.html to update -->
+<!-- SHARED FOOTER -->
 <div id="main-footer"></div>
 
 </body>
