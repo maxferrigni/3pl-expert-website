@@ -7,24 +7,24 @@
 
 /* Menu Bar */
 .menu-bar {background:#0a0a0a;border-bottom:1px solid rgba(255,255,255,0.1);}
-.mb-inner {display:flex;align-items:center;justify-content:space-between;width:92%;max-width:1600px;margin:0 auto;padding:10px 0;gap:16px;}
-.mb-left {display:flex;align-items:center;gap:12px;flex-shrink:0;}
-.mb-logo img {height:32px;display:block;}
-.mb-face {width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #6699ff;flex-shrink:0;}
+.mb-inner {display:flex;align-items:center;justify-content:space-between;width:92%;max-width:1600px;margin:0 auto;padding:14px 0;gap:20px;}
+.mb-left {display:flex;align-items:center;gap:14px;flex-shrink:0;}
+.mb-logo img {height:36px;display:block;}
+.mb-face {width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid #6699ff;flex-shrink:0;}
 
 /* Nav links with icons */
-.mb-nav {display:none;align-items:center;gap:6px;flex:1;justify-content:center;}
+.mb-nav {display:none;align-items:center;gap:8px;flex:1;justify-content:center;}
 @media (min-width:800px){.mb-nav {display:flex;}}
-.mb-nav a {display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 10px;border-radius:6px;text-decoration:none;transition:background 0.2s;}
+.mb-nav a {display:flex;flex-direction:column;align-items:center;gap:5px;padding:8px 16px;border-radius:8px;text-decoration:none;transition:background 0.2s;}
 .mb-nav a:hover {background:rgba(102,153,255,0.08);}
 .mb-nav a.active {background:rgba(102,153,255,0.12);}
-.mb-nav a img {width:36px;height:36px;object-fit:contain;}
-.mb-nav a span {font-size:0.7rem;font-weight:600;color:#aaa;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;}
+.mb-nav a img {width:44px;height:44px;object-fit:contain;border-radius:6px;}
+.mb-nav a span {font-size:0.72rem;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;}
 .mb-nav a:hover span, .mb-nav a.active span {color:#fff;}
 
-/* Email CTA */
-.mb-cta {background:#6699ff;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.9rem;white-space:nowrap;flex-shrink:0;}
-.mb-cta:hover {background:#4d80e6;color:#fff;}
+/* Email CTA — outlined style */
+.mb-cta {background:transparent;color:#6699ff;padding:10px 20px;border-radius:6px;border:1.5px solid #6699ff;text-decoration:none;font-weight:600;font-size:0.9rem;white-space:nowrap;flex-shrink:0;transition:all 0.2s;}
+.mb-cta:hover {background:#6699ff;color:#fff;}
 
 /* =====================
    FOOTER
