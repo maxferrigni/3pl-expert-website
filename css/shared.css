@@ -13,9 +13,9 @@
 .mb-face {width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid #6699ff;flex-shrink:0;}
 
 /* Nav links with icons */
-.mb-nav {display:none;align-items:center;gap:8px;flex:1;justify-content:center;}
+.mb-nav {display:none;align-items:center;flex:1;justify-content:center;}
 @media (min-width:800px){.mb-nav {display:flex;}}
-.mb-nav a {display:flex;flex-direction:column;align-items:center;gap:5px;padding:8px 16px;border-radius:8px;text-decoration:none;transition:background 0.2s;}
+.mb-nav a {display:flex;flex-direction:column;align-items:center;gap:5px;padding:8px 0;border-radius:8px;text-decoration:none;transition:background 0.2s;flex:1;max-width:120px;}
 .mb-nav a:hover {background:rgba(102,153,255,0.08);}
 .mb-nav a.active {background:rgba(102,153,255,0.12);}
 .mb-nav a img {width:44px;height:44px;object-fit:contain;border-radius:6px;}
