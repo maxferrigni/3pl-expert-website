@@ -1,4 +1,24 @@
 /* =====================
+   DESIGN TOKENS
+   ===================== */
+:root {
+  --hero-padding: 50px 0 30px;
+  --section-gap: 50px;
+  --card-padding: 22px 20px;
+  --block-padding: 32px 28px;
+  --body-font-size: 1rem;
+  --body-line-height: 1.75;
+  --label-size: 0.8rem;
+  --card-radius: 8px;
+  --accent: #6699ff;
+  --amber: #f5a623;
+  --text-muted: #aaa;
+  --text-body: #ccc;
+  --bg-card: rgba(255,255,255,0.03);
+  --border-card: rgba(255,255,255,0.08);
+}
+
+/* =====================
    SHARED NAV & FOOTER
    ===================== */
 
