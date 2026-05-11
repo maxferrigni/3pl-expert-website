@@ -1,31 +1,38 @@
-<div class="menu-bar">
-  <div class="mb-inner">
-    <div class="mb-left">
-      <a href="/index.html" class="mb-logo"><img src="/Images/logo-inverse.svg" alt="3PL Expert"></a>
-      <img src="/Images/bio-pic.webp" alt="Max Ferrigni" class="mb-face">
-    </div>
-    <nav class="mb-nav">
-      <a href="/fighting.html">
-        <img src="/Images/navbanner/nav_fighting.png" alt="Fighting">
-        <span>Fighting</span>
-      </a>
-      <a href="/fixing.html">
-        <img src="/Images/navbanner/nav_fixing.png" alt="Fixing">
-        <span>Fixing</span>
-      </a>
-      <a href="/looking.html">
-        <img src="/Images/navbanner/nav_looking.png" alt="Looking">
-        <span>Looking</span>
-      </a>
-      <a href="/negotiating.html">
-        <img src="/Images/navbanner/nav_negotiating.png" alt="Haggling">
-        <span>Haggling</span>
-      </a>
-      <a href="/moving.html">
-        <img src="/Images/navbanner/nav_moving.png" alt="Moving">
-        <span>Moving</span>
-      </a>
-    </nav>
-    <a href="#" class="mb-cta" id="nav-email-btn">Email Max</a>
-  </div>
-</div>
+// nav-loader.js — loads shared nav and footer, sets active link + email mailto
+(function() {
+
+  var emailMap = {};  // all pages use solutions@3pl-expert.com
+
+  var page = window.location.pathname.split('/').pop() || 'index.html';
+
+  // Load NAV
+  fetch('/includes/nav.html')
+    .then(function(r) { return r.text(); })
+    .then(function(html) {
+      var el = document.getElementById('main-nav');
+      if (!el) return;
+      el.innerHTML = html;
+
+      // Set active link based on current page
+      var links = el.querySelectorAll('.mb-nav a');
+      links.forEach(function(a) {
+        if (a.getAttribute('href') === '/' + page) {
+          a.classList.add('active');
+        }
+      });
+
+      // Set email button
+      var email = 'solutions@3pl-expert.com';
+      var btn = el.querySelector('#nav-email-btn');
+      if (btn) btn.href = 'mailto:' + email + '?subject=3PL%20Consultation%20Request';
+    });
+
+  // Load FOOTER
+  fetch('/includes/footer.html')
+    .then(function(r) { return r.text(); })
+    .then(function(html) {
+      var el = document.getElementById('main-footer');
+      if (el) el.innerHTML = html;
+    });
+
+})();
