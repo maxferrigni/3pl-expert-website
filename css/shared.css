@@ -42,9 +42,9 @@
 .mb-nav a span {font-size:0.72rem;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;}
 .mb-nav a:hover span, .mb-nav a.active span {color:#fff;}
 
-/* Email CTA — outlined style */
-.mb-cta {background:transparent;color:#6699ff;padding:10px 20px;border-radius:6px;border:1.5px solid #6699ff;text-decoration:none;font-weight:600;font-size:0.9rem;white-space:nowrap;flex-shrink:0;transition:all 0.2s;}
-.mb-cta:hover {background:#6699ff;color:#fff;}
+/* Email CTA — filled style matching page buttons */
+.mb-cta {background:#6699ff;color:#fff;padding:12px 28px;border-radius:6px;border:none;text-decoration:none;font-weight:600;font-size:1rem;white-space:nowrap;flex-shrink:0;transition:all 0.2s;}
+.mb-cta:hover {background:#4d80e6;color:#fff;}
 
 /* =====================
    FOOTER
